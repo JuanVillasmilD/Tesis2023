@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CambiarEscena : MonoBehaviour
 {
-    public string nombreEscena = "2";
+    public string nombreEscena = "";
 
     private void Start()
     {
