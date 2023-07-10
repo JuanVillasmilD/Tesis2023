@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19969d968577081408eff988237980a6
+guid: 63ae27298f713644e8f8b2423a9dea05
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,9 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Quiche Text
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e71cf788b3516264780299de1eb8f224, type: 3}
+  - {fileID: 12800000, guid: 6aebc0b6b3f768e4380a69478d096add, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
