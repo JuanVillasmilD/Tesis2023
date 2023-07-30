@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ba343e2ade68b34da01bf5b704d719a
+guid: bbbdcabe5e605e240896111dd05d237c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,8 +9,10 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Code Pro LC
-  fallbackFontReferences: []
+  - Circe
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d795ac8dec1991949b4710d8e36ced6a, type: 3}
+  - {fileID: 12800000, guid: 66588ba76e92e084fb40153157acd137, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
