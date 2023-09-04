@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SlidingScript : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class SlidingScript : MonoBehaviour
     [SerializeField]
     private TilesScript[] tiles;
     private int emptySpaceIndex = 15;
+    private bool _isFinished;
+    [SerializeField] private GameObject endPanel;
 
     void Start()
     {
@@ -37,34 +40,92 @@ public class SlidingScript : MonoBehaviour
                 }
             }
         }
+        if (!_isFinished)
+        {
+            int correctTiles = 0;
+            foreach (var a in tiles)
+            {
+                if (a != null)
+                {
+                    if (a.inRightPlace)
+                        correctTiles++;
+                }
+            }
+
+            if (correctTiles == tiles.Length - 1)
+            {
+                _isFinished = true;
+                endPanel.SetActive(true);
+            }
+        }
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Shuffle()
     {
-        for (int i = 0; i <= 14; i++)
+        if (emptySpaceIndex != 15)
         {
-            var lastPos = tiles[i].targetPosition;
-            int randomIndex = Random.Range(0, 14);
-            tiles[i].targetPosition = tiles[randomIndex].targetPosition;
-            tiles[randomIndex].targetPosition = lastPos;
-            var tile = tiles[i];
-            tiles[i] = tiles[randomIndex];
-            tiles[randomIndex] = tile;
+            var tileOn15LastPos = tiles[15].targetPosition;
+            tiles[15].targetPosition = emptySpace.position;
+            emptySpace.position = tileOn15LastPos;
+            tiles[emptySpaceIndex] = tiles[15];
+            tiles[15] = null;
+            emptySpaceIndex = 15;
         }
-        
-    }
-    public int findIndex(TilesScript ts)
+        int inversion;
+        do
         {
-            for (int i = 0; i < tiles.Length; i++)
+            for (int i = 0; i <= 14; i++)
             {
-                if (tiles[i] != null)
+                var lastPos = tiles[i].targetPosition;
+                int randomIndex = Random.Range(0, 14);
+                tiles[i].targetPosition = tiles[randomIndex].targetPosition;
+                tiles[randomIndex].targetPosition = lastPos;
+                var tile = tiles[i];
+                tiles[i] = tiles[randomIndex];
+                tiles[randomIndex] = tile;
+            }
+            inversion = GetInversions();
+        } while (inversion % 2 != 0);
+    }
+
+    public int findIndex(TilesScript ts)
+    {
+        for (int i = 0; i < tiles.Length; i++)
+        {
+            if (tiles[i] != null)
+            {
+                if (tiles[i] == ts)
                 {
-                    if (tiles[i] == ts)
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+
+    int GetInversions()
+    {
+        int inversionsSum = 0;
+        for (int i = 0; i < tiles.Length; i++)
+        {
+            int thisTileInvertion = 0;
+            for (int j = i; j < tiles.Length; j++)
+            {
+                if (tiles[j] != null)
+                {
+                    if (tiles[i].number > tiles[j].number)
                     {
-                        return i;
+                        thisTileInvertion++;
                     }
                 }
             }
-            return -1;
+            inversionsSum += thisTileInvertion;
         }
+        return inversionsSum;
+    }
 }

@@ -7,6 +7,7 @@ public class TilesScript : MonoBehaviour
     public Vector3 targetPosition;
     private Vector3 correctPosition;
     public int number;
+    public bool inRightPlace;
     void Awake()
     {
         targetPosition = transform.position;
@@ -17,5 +18,13 @@ public class TilesScript : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, targetPosition, 0.05f);
+        if (targetPosition == correctPosition)
+        {
+            inRightPlace = true;
+        }
+        else
+        {
+            inRightPlace = false;
+        }
     }
 }
