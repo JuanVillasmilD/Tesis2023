@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro; // Cambia la importación a TMPro
 
 public class SlidingScript : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class SlidingScript : MonoBehaviour
     private int emptySpaceIndex = 15;
     private bool _isFinished;
     [SerializeField] private GameObject endPanel;
+    [SerializeField] private TextMeshProUGUI endPanelTimeText; // Cambia el tipo de Text a TextMeshProUGUI
 
     void Start()
     {
@@ -56,6 +58,9 @@ public class SlidingScript : MonoBehaviour
             {
                 _isFinished = true;
                 endPanel.SetActive(true);
+                    var a = GetComponent<TimerScript>();
+                a.StopTimer();
+                endPanelTimeText.text = (a.minutes < 10?"0":"") + a.minutes + ":" + (a.seconds < 10?"0":"") + a.seconds;
             }
         }
     }
