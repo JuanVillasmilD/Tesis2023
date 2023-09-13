@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro; // Cambia la importación a TMPro
 
-public class SlidingScript : MonoBehaviour
+public class SlidingScriptH : MonoBehaviour
 {
     [SerializeField]
     private Transform emptySpace = null;
