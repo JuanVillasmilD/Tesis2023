@@ -137,6 +137,7 @@ public class FireBaseManager : MonoBehaviour
             if (!signedIn && user != null)
             {
                 UnityEngine.Debug.Log("Signed Out");
+                GameManager.instance.ChangeScene(0);
             }
 
             user = auth.CurrentUser;
@@ -338,5 +339,10 @@ public class FireBaseManager : MonoBehaviour
         {
             resetOutputText.text = "Se ha enviado un correo para restablecer la contraseña.";
         }
+    }
+
+    public void SignOut()
+    {
+        auth.SignOut();
     }
 }
