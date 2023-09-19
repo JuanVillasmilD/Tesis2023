@@ -1,39 +1,55 @@
+using System.Diagnostics;
+using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using Firebase;
 using Firebase.Auth;
+using Firebase.Extensions;
 using TMPro;
 
 public class FireBaseManager : MonoBehaviour
 {
     public static FireBaseManager instance;
-    
+
     [Header("Firebase")]
     public FirebaseAuth auth;
     public FirebaseUser user;
-    [Space(5f)]
 
+    [Space(5f)]
     [Header("Login References")]
     [SerializeField]
     private TMP_InputField loginEmail;
+
     [SerializeField]
     private TMP_InputField loginPassword;
+
     [SerializeField]
     private TMP_Text loginOutputText;
-    [Space(5f)]
 
+    [Space(5f)]
     [Header("Register References")]
     [SerializeField]
     private TMP_InputField registerUsername;
+
     [SerializeField]
     private TMP_InputField registerEmail;
+
     [SerializeField]
     private TMP_InputField registerPassword;
+
     [SerializeField]
     private TMP_InputField registerConfirmPassword;
+
     [SerializeField]
     private TMP_Text registerOutputText;
 
+    [Space(5f)]
+    [Header("Password Reset References")]
+    [SerializeField]
+    private TMP_InputField resetEmail;
+
+    [SerializeField]
+    private TMP_Text resetOutputText;
 
     private void Awake()
     {
@@ -47,45 +63,87 @@ public class FireBaseManager : MonoBehaviour
             Destroy(instance.gameObject);
             instance = this;
         }
+    }
 
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(checkDependencyTask => {
-            var dependencyStatus = checkDependencyTask.Result;
+    private void Start()
+    {
+        StartCoroutine(CheckAndFixDependencies());
+    }
 
-            if (dependencyStatus == DependencyStatus.Available)
-            {
-                InitializeFirebase();
-            }
-            else
-            {
-                Debug.LogError($"Could not resolve all Firebase dependencies: {dependencyStatus}");
-            }
-        });
+    private IEnumerator CheckAndFixDependencies()
+    {
+        var checkAndFixDependenciesTask = FirebaseApp.CheckAndFixDependenciesAsync();
+
+        yield return new WaitUntil(predicate: () => checkAndFixDependenciesTask.IsCompleted);
+
+        var dependencyResult = checkAndFixDependenciesTask.Result;
+
+        if (dependencyResult == DependencyStatus.Available)
+        {
+            InitializeFirebase();
+        }
+        else
+        {
+            UnityEngine.Debug.LogError(
+                $"Could not resolve all Firebase dependencies: {dependencyResult}"
+            );
+        }
     }
 
     private void InitializeFirebase()
     {
         auth = FirebaseAuth.DefaultInstance;
+        StartCoroutine(CheckAutoLogin());
 
         auth.StateChanged += AuthStateChanged;
         AuthStateChanged(this, null);
     }
 
+    private IEnumerator CheckAutoLogin()
+    {
+        yield return new WaitForEndOfFrame();
+        if (user != null)
+        {
+            var reloadUserTask = user.ReloadAsync();
+
+            yield return new WaitUntil(predicate: () => reloadUserTask.IsCompleted);
+
+            AutoLogin();
+        }
+        else
+        {
+            AuthUIManager.instance.LoginScreen();
+        }
+    }
+
+    private void AutoLogin()
+    {
+        if (user != null)
+        {
+            GameManager.instance.ChangeScene(1);
+        }
+        else
+        {
+            AuthUIManager.instance.LoginScreen();
+        }
+    }
+
     private void AuthStateChanged(object sender, System.EventArgs eventArgs)
     {
-        if(auth.CurrentUser != user)
+        if (auth.CurrentUser != user)
         {
             bool signedIn = user != auth.CurrentUser && auth.CurrentUser != null;
 
-            if(!signedIn && user != null)
+            if (!signedIn && user != null)
             {
-                Debug.Log("Signed Out");
+                UnityEngine.Debug.Log("Signed Out");
             }
 
             user = auth.CurrentUser;
 
             if (signedIn)
             {
-                Debug.Log($"Signed In: {user.DisplayName}");
+                UnityEngine.Debug.Log($"Signed In: {user.DisplayName}");
             }
         }
     }
@@ -103,7 +161,14 @@ public class FireBaseManager : MonoBehaviour
 
     public void RegisterButton()
     {
-        StartCoroutine(RegisterLogic(registerUsername.text, registerEmail.text, registerPassword.text, registerConfirmPassword.text));
+        StartCoroutine(
+            RegisterLogic(
+                registerUsername.text,
+                registerEmail.text,
+                registerPassword.text,
+                registerConfirmPassword.text
+            )
+        );
     }
 
     private IEnumerator LoginLogic(string _email, string _password)
@@ -116,7 +181,8 @@ public class FireBaseManager : MonoBehaviour
 
         if (loginTask.Exception != null)
         {
-            FirebaseException firebaseException = (FirebaseException)loginTask.Exception.GetBaseException();
+            FirebaseException firebaseException = (FirebaseException)
+                loginTask.Exception.GetBaseException();
             AuthError error = (AuthError)firebaseException.ErrorCode;
             string output = "Error desconocido, intente nuevamente.";
 
@@ -154,9 +220,14 @@ public class FireBaseManager : MonoBehaviour
         }
     }
 
-    private IEnumerator RegisterLogic(string _username, string _email, string _password, string _confirmPassword)
+    private IEnumerator RegisterLogic(
+        string _username,
+        string _email,
+        string _password,
+        string _confirmPassword
+    )
     {
-        if(_username == "")
+        if (_username == "")
         {
             registerOutputText.text = "Por favor introduce tu nombre.";
         }
@@ -164,15 +235,16 @@ public class FireBaseManager : MonoBehaviour
         {
             registerOutputText.text = "Contraseñas no coinciden.";
         }
-        else 
+        else
         {
             var registerTask = auth.CreateUserWithEmailAndPasswordAsync(_email, _password);
 
             yield return new WaitUntil(predicate: () => registerTask.IsCompleted);
 
-            if(registerTask.Exception != null)
+            if (registerTask.Exception != null)
             {
-                FirebaseException firebaseException = (FirebaseException)registerTask.Exception.GetBaseException();
+                FirebaseException firebaseException = (FirebaseException)
+                    registerTask.Exception.GetBaseException();
                 AuthError error = (AuthError)firebaseException.ErrorCode;
                 string output = "Error desconocido, intente nuevamente.";
 
@@ -196,21 +268,19 @@ public class FireBaseManager : MonoBehaviour
                 }
                 registerOutputText.text = output;
             }
-            else 
+            else
             {
-                UserProfile profile = new UserProfile
-                {
-                    DisplayName = _username,
-                };
+                UserProfile profile = new UserProfile { DisplayName = _username, };
 
                 var defaultUserTask = user.UpdateUserProfileAsync(profile);
 
                 yield return new WaitUntil(predicate: () => defaultUserTask.IsCompleted);
 
-                if(defaultUserTask.Exception != null)
+                if (defaultUserTask.Exception != null)
                 {
                     user.DeleteAsync();
-                    FirebaseException firebaseException = (FirebaseException)defaultUserTask.Exception.GetBaseException();
+                    FirebaseException firebaseException = (FirebaseException)
+                        defaultUserTask.Exception.GetBaseException();
                     AuthError error = (AuthError)firebaseException.ErrorCode;
                     string output = "Error desconocido, intente nuevamente.";
 
@@ -225,13 +295,48 @@ public class FireBaseManager : MonoBehaviour
                     }
                     registerOutputText.text = output;
                 }
-                else 
+                else
                 {
-                    Debug.Log($"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})");
+                    UnityEngine.Debug.Log(
+                        $"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})"
+                    );
                 }
             }
         }
     }
+
+    public void ResetPasswordButton()
+    {
+        StartCoroutine(ResetPasswordLogic(resetEmail.text));
+    }
+
+    private IEnumerator ResetPasswordLogic(string _email)
+    {
+        var resetTask = auth.SendPasswordResetEmailAsync(_email);
+
+        yield return new WaitUntil(predicate: () => resetTask.IsCompleted);
+
+        if (resetTask.Exception != null)
+        {
+            FirebaseException firebaseException = (FirebaseException)
+                resetTask.Exception.GetBaseException();
+            AuthError error = (AuthError)firebaseException.ErrorCode;
+            string output = "Error desconocido, intente nuevamente.";
+
+            switch (error)
+            {
+                case AuthError.InvalidEmail:
+                    output = "Email inválido.";
+                    break;
+                case AuthError.UserNotFound:
+                    output = "Usuario no encontrado.";
+                    break;
+            }
+            resetOutputText.text = output;
+        }
+        else
+        {
+            resetOutputText.text = "Se ha enviado un correo para restablecer la contraseña.";
+        }
+    }
 }
-
-

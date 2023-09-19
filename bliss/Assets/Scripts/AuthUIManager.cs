@@ -4,13 +4,19 @@ using TMPro;
 public class AuthUIManager : MonoBehaviour
 {
     public static AuthUIManager instance;
+
     [Header("References")]
     [SerializeField]
     private GameObject mainUI;
+
     [SerializeField]
     private GameObject loginUI;
+
     [SerializeField]
     private GameObject registerUI;
+
+    [SerializeField]
+    private GameObject forgotUI;
 
     private void Awake()
     {
@@ -30,20 +36,31 @@ public class AuthUIManager : MonoBehaviour
         mainUI.SetActive(false);
         loginUI.SetActive(false);
         registerUI.SetActive(false);
+        forgotUI.SetActive(false);
         FireBaseManager.instance.ClearOutputs();
     }
 
     public void LoginScreen()
     {
         ClearUI();
-        mainUI.SetActive(false);
         loginUI.SetActive(true);
     }
 
     public void RegisterScreen()
     {
         ClearUI();
-        mainUI.SetActive(false);
         registerUI.SetActive(true);
+    }
+
+    public void ForgotScreen()
+    {
+        ClearUI();
+        forgotUI.SetActive(true);
+    }
+
+    public void BackToMainScreen()
+    {
+        ClearUI();
+        mainUI.SetActive(true);
     }
 }
