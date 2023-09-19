@@ -230,11 +230,19 @@ public class FireBaseManager : MonoBehaviour
     {
         if (_username == "")
         {
-            registerOutputText.text = "Por favor introduce tu nombre.";
+            registerOutputText.text = "Por favor ingrese su nombre.";
+        }
+        else if (_username.Length > 15)
+        {
+            registerOutputText.text = "El nombre no debe tener más de 15 caracteres.";
+        }
+        else if (ContainsNumbers(_username))
+        {
+            registerOutputText.text = "El nombre no debe contener números.";
         }
         else if (_password != _confirmPassword)
         {
-            registerOutputText.text = "Contraseñas no coinciden.";
+            registerOutputText.text = "Las contraseñas no coinciden.";
         }
         else
         {
@@ -298,12 +306,23 @@ public class FireBaseManager : MonoBehaviour
                 }
                 else
                 {
-                    UnityEngine.Debug.Log(
-                        $"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})"
-                    );
+                    UnityEngine.Debug.Log($"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})");
+                    AuthUIManager.instance.LoginScreen();
                 }
             }
         }
+    }
+
+    private bool ContainsNumbers(string input)
+    {
+        foreach (char c in input)
+        {
+            if (char.IsDigit(c))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void ResetPasswordButton()
