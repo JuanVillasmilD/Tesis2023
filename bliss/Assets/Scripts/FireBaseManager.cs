@@ -345,4 +345,9 @@ public class FireBaseManager : MonoBehaviour
     {
         auth.SignOut();
     }
+
+    public string GetUsername()
+    {
+        return user != null ? user.DisplayName : "";
+    }
 }
