@@ -182,8 +182,7 @@ public class FireBaseManager : MonoBehaviour
 
         if (loginTask.Exception != null)
         {
-            FirebaseException firebaseException = (FirebaseException)
-                loginTask.Exception.GetBaseException();
+            FirebaseException firebaseException = (FirebaseException)loginTask.Exception.GetBaseException();
             AuthError error = (AuthError)firebaseException.ErrorCode;
             string output = "Error desconocido, intente nuevamente.";
 
@@ -202,7 +201,7 @@ public class FireBaseManager : MonoBehaviour
                     output = "Contraseña inválida.";
                     break;
                 case AuthError.UserNotFound:
-                    output = "Cuenta no existe.";
+                    output = "Usuario no encontrado.";
                     break;
             }
             loginOutputText.text = output;
@@ -306,7 +305,9 @@ public class FireBaseManager : MonoBehaviour
                 }
                 else
                 {
-                    UnityEngine.Debug.Log($"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})");
+                    UnityEngine.Debug.Log(
+                        $"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})"
+                    );
                     AuthUIManager.instance.LoginScreen();
                 }
             }
