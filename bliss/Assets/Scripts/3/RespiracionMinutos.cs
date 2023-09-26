@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RespiracionMinutos : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class RespiracionMinutos : MonoBehaviour
     public Button boton3;
     public Button boton4;
 
+    public string sceneNameToLoad;
+    public Button nextscene;
+
     private void Start()
     {
         // Configura las funciones de los botones para cambiar de objeto
@@ -20,6 +24,7 @@ public class RespiracionMinutos : MonoBehaviour
         boton2.onClick.AddListener(ShowObjeto2);
         boton3.onClick.AddListener(ShowObjeto3);
         boton4.onClick.AddListener(ShowObjeto4);
+        nextscene.onClick.AddListener(LoadScene);
     }
 
     private void ShowObjeto1()
@@ -52,5 +57,11 @@ public class RespiracionMinutos : MonoBehaviour
         objeto2.SetActive(false);
         objeto3.SetActive(false);
         objeto4.SetActive(true);
+    }
+
+    private void LoadScene()
+    {
+        // Carga la escena configurada en el Inspector
+        SceneManager.LoadScene(sceneNameToLoad);
     }
 }
