@@ -120,7 +120,7 @@ public class FireBaseManager : MonoBehaviour
     {
         if (user != null)
         {
-            GameManager.instance.ChangeScene(1);
+            GameManager.instance.ChangeScene(2);
         }
         else
         {
@@ -137,7 +137,7 @@ public class FireBaseManager : MonoBehaviour
             if (!signedIn && user != null)
             {
                 UnityEngine.Debug.Log("Signed Out");
-                GameManager.instance.ChangeScene(0);
+                GameManager.instance.ChangeScene(1);
             }
 
             user = auth.CurrentUser;

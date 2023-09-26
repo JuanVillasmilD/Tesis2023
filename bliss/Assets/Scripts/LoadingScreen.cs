@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-
 public class LoadingScreen : MonoBehaviour
 {
     public float loadDelay = 1.5f; // Duración en segundos de la pantalla de carga.
+    public string sceneToLoad = "SceneName"; // Nombre de la escena que se cargará.
 
     void Start()
     {
@@ -18,6 +18,7 @@ public class LoadingScreen : MonoBehaviour
         // Espera durante el tiempo especificado.
         yield return new WaitForSeconds(loadDelay);
 
-        SceneManager.LoadScene(2);
+        // Carga la escena especificada en sceneToLoad.
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
