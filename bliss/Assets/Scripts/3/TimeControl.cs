@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 
 public class TimeControl : MonoBehaviour
 {
     private bool isPaused = true; // Inicialmente, la escena está pausada
     public Button toggleButton; // Referencia al botón en el Canvas
     public TextController textController; // Referencia al TextController
-    public TextMeshProUGUI timerText; // Referencia al TextMeshProUGUI para mostrar el tiempo
     private float elapsedTime = 0f; // Tiempo transcurrido en segundos
 
     void Start()
@@ -26,17 +27,6 @@ public class TimeControl : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
         }
-
-        // Actualiza el texto del temporizador en formato "00:00"
-        string formattedTime = FormatTime(elapsedTime);
-        timerText.text = formattedTime;
-    }
-
-    string FormatTime(float timeInSeconds)
-    {
-        int minutes = Mathf.FloorToInt(timeInSeconds / 60);
-        int seconds = Mathf.FloorToInt(timeInSeconds % 60);
-        return string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
     void ToggleTimeScale()
