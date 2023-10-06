@@ -196,7 +196,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &106747328
 SpriteRenderer:
@@ -323,7 +323,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &146683229
 SpriteRenderer:
@@ -990,7 +990,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &421165530
 SpriteRenderer:
@@ -1220,7 +1220,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &456563190
 SpriteRenderer:
@@ -1476,7 +1476,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &501350130
 SpriteRenderer:
@@ -1747,7 +1747,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &759794864
 SpriteRenderer:
@@ -1825,7 +1825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792761653}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.52, y: -0.555, z: 0}
+  m_LocalPosition: {x: 0.84, y: -2.76, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2177,7 +2177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &1088299727
 SpriteRenderer:
@@ -2995,7 +2995,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &1686280170
 SpriteRenderer:
@@ -3122,7 +3122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &1704949548
 SpriteRenderer:
@@ -3434,7 +3434,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &1824651182
 SpriteRenderer:
@@ -3561,7 +3561,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.48, y: 2.5}
   m_EdgeRadius: 0
 --- !u!212 &1904562854
 SpriteRenderer:
@@ -3781,6 +3781,7 @@ GameObject:
   - component: {fileID: 2045718931}
   - component: {fileID: 2045718930}
   - component: {fileID: 2045718929}
+  - component: {fileID: 2045718932}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -3902,3 +3903,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045718927}
   m_CullTransparentMesh: 1
+--- !u!114 &2045718932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045718927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24369cbdd2ad95a4699ce32b6ea547e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: 4

@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 230682316}
   - component: {fileID: 230682315}
   - component: {fileID: 230682314}
+  - component: {fileID: 230682317}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -602,6 +603,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230682312}
   m_CullTransparentMesh: 1
+--- !u!114 &230682317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230682312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24369cbdd2ad95a4699ce32b6ea547e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreEscena: 4
 --- !u!1 &357861167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,8 +1448,8 @@ MonoBehaviour:
   - {fileID: 598756127}
   - {fileID: 1321417738}
   - {fileID: 0}
-  endPanel: {fileID: 0}
-  endPanelTimeText: {fileID: 0}
+  endPanel: {fileID: 756544150}
+  endPanelTimeText: {fileID: 388468343}
 --- !u!114 &1006378825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1448,7 +1462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad8e2b6d2af3de04dbb4616a82227262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
+  timeText: {fileID: 1797835882}
   seconds: 0
   minutes: 0
 --- !u!1 &1013139843
