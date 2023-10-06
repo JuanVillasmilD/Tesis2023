@@ -15,6 +15,11 @@ public class SlidingScriptE : MonoBehaviour
     [SerializeField] private GameObject endPanel;
     [SerializeField] private TextMeshProUGUI endPanelTimeText;
 
+    private int moveCount = 0;
+
+    [SerializeField]
+    private TextMeshProUGUI moveCountText; // Agrega el campo para el componente TMP en el Inspector
+
     void Start()
     {
         _camera = Camera.main;
@@ -39,6 +44,12 @@ public class SlidingScriptE : MonoBehaviour
                     tiles[emptySpaceIndex] = tiles[tileIndex];
                     tiles[tileIndex] = null;
                     emptySpaceIndex = tileIndex;
+
+                    // Incrementa el contador de movimientos
+                    moveCount++;
+
+                    // Actualiza el texto del contador en el componente TMP
+                    moveCountText.text = moveCount.ToString();
                 }
             }
         }

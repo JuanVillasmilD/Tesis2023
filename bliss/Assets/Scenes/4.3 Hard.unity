@@ -2162,6 +2162,7 @@ MonoBehaviour:
   - {fileID: 0}
   endPanel: {fileID: 508021191}
   endPanelTimeText: {fileID: 1363669748}
+  moveCountText: {fileID: 696403842}
 --- !u!114 &820874407
 MonoBehaviour:
   m_ObjectHideFlags: 0
