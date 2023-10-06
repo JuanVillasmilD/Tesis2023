@@ -458,8 +458,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: No olvides de explotarlas todas.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -959,8 +959,8 @@ MonoBehaviour:
     en busca de la soluci\xF3n perfecta. No hay prisa aqu\xED, solo un espacio para
     la reflexi\xF3n y la concentraci\xF3n."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2842,8 +2842,8 @@ MonoBehaviour:
     burbujas de manera suave. T\xF3mate un momento para desconectar y encontrar la
     calma con este juego interactivo que puede ser una puerta hacia la serenidad."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2977,8 +2977,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1Organiza todos los n\xFAmeros!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4846,8 +4846,8 @@ MonoBehaviour:
     es una oportunidad para conectar con tu interior y lograr una sensaci\xF3n de
     equilibrio mental."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5400,8 +5400,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1Experimenta un sin fin de emociones placenteras con estos mini-juegos!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5942,8 +5942,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1Coloca las piezas en su lugar!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
-  m_sharedMaterial: {fileID: -2162529096978455678, guid: 09372eac78c073c4ea2867e203b508ec, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
