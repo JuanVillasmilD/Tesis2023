@@ -6,10 +6,10 @@ public class GeneradorBombillos : MonoBehaviour
 {
     public Sprite spriteBombilloGris;
     public Sprite spriteBombilloBlanco;
-    public Sprite spriteBombilloAzul; // Sprite para el bombillo azul.
-    public Sprite spriteBombilloAmarillo; // Sprite para el bombillo amarillo.
-
-    public AudioClip sonidoBombillo; // Sonido a reproducir cuando se selecciona un bombillo.
+    public Sprite spriteBombilloAzul;
+    public Sprite spriteBombilloAmarillo;
+    public AudioClip sonidoBombillo;
+    private BubblesManager deteccionSonido;
 
     private SpriteRenderer spriteRenderer;
     private bool seleccionado = false;
@@ -18,11 +18,11 @@ public class GeneradorBombillos : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         ActualizarSpriteInicial();
+        deteccionSonido = FindObjectOfType<BubblesManager>();
     }
 
     void ActualizarSpriteInicial()
     {
-        // Asignar aleatoriamente el sprite del bombillo gris o blanco.
         Sprite spriteInicial = Random.Range(0f, 1f) < 0.5f ? spriteBombilloGris : spriteBombilloBlanco;
         spriteRenderer.sprite = spriteInicial;
     }
@@ -39,7 +39,6 @@ public class GeneradorBombillos : MonoBehaviour
     {
         seleccionado = true;
 
-        // Cambiar el sprite a azul o amarillo según el color original.
         if (spriteRenderer.sprite == spriteBombilloGris)
         {
             spriteRenderer.sprite = spriteBombilloAzul;
@@ -49,10 +48,10 @@ public class GeneradorBombillos : MonoBehaviour
             spriteRenderer.sprite = spriteBombilloAmarillo;
         }
 
-        // Reproducir el sonido del bombillo.
         if (sonidoBombillo != null)
         {
             AudioSource.PlayClipAtPoint(sonidoBombillo, transform.position);
+            deteccionSonido.DetectarSonido();
         }
     }
 }
