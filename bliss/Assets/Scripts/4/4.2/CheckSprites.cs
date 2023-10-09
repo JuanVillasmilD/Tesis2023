@@ -5,14 +5,11 @@ public class CheckSprites : MonoBehaviour
     [SerializeField]
     private Transform[] pictures;
     [SerializeField]
-    private GameObject winText;
+    private GameObject nextLevel;
+    [SerializeField]
+    private GameObject currentLevel;
     // Define una tolerancia para la comparación
     private float rotationTolerance = 0.01f;
-
-    void Start()
-    {
-        winText.SetActive(false);
-    }
 
     void Update()
     {
@@ -30,7 +27,8 @@ public class CheckSprites : MonoBehaviour
 
         if (allPicturesCorrect)
         {
-            winText.SetActive(true);
+            nextLevel.SetActive(true);
+            currentLevel.SetActive(false);
         }
     }
 }
