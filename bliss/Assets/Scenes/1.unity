@@ -771,8 +771,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37
-  m_fontSizeBase: 37
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2248,6 +2248,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853706779}
   m_CullTransparentMesh: 1
+--- !u!1 &862310111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 862310113}
+  - component: {fileID: 862310112}
+  m_Layer: 0
+  m_Name: GestorMensajes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &862310112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862310111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb208a6c6bc25047ad0b298716462e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tituloText: {fileID: 299071458}
+  desarrolloText: {fileID: 1504494612}
+  mensajes:
+  - titulo: Encuentra la paz interior
+    desarrollo: "Lib\xE9rate de las tensiones y permite que la armon\xEDa y la serenidad
+      te envuelvan."
+  - titulo: "Rel\xE1jate y siente la tranquilidad"
+    desarrollo: "Deja atr\xE1s las preocupaciones y permite que la armon\xEDa y la
+      calma inunden tu ser."
+  - titulo: "Escapa del estr\xE9s, abraza la serenidad"
+    desarrollo: "Desp\xEDdete del estr\xE9s y da la bienvenida a la serenidad en
+      tu vida."
+  - titulo: Descubre la calma interior
+    desarrollo: "Rompe las cadenas del estr\xE9s y permite que la armon\xEDa te gu\xEDe
+      hacia la paz interior."
+  - titulo: "En el coraz\xF3n de la tranquilidad"
+    desarrollo: "Deja que la serenidad sea tu refugio en medio del ajetreo y el estr\xE9s
+      cotidiano."
+--- !u!4 &862310113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862310111}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4388997, y: 0.04032872, z: 18.654789}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &914877766
 GameObject:
   m_ObjectHideFlags: 0
