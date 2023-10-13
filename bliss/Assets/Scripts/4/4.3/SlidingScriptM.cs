@@ -94,9 +94,9 @@ public class SlidingScriptM : MonoBehaviour
     {
         if (emptySpaceIndex != 11) // Cambiar la comprobación al nuevo índice del espacio vacío
         {
-            var tileOn8LastPos = tiles[11].targetPosition; // Cambiar el índice a 8
+            var tileOn11LastPos = tiles[11].targetPosition; // Cambiar el índice a 8
             tiles[11].targetPosition = emptySpace.position;
-            emptySpace.position = tileOn8LastPos;
+            emptySpace.position = tileOn11LastPos;
             tiles[emptySpaceIndex] = tiles[11]; // Cambiar el índice a 8
             tiles[11] = null;
             emptySpaceIndex = 11; // Cambiar el índice a 8

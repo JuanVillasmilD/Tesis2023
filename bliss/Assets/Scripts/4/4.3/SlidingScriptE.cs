@@ -12,8 +12,12 @@ public class SlidingScriptE : MonoBehaviour
     private TilesScript[] tiles;
     private int emptySpaceIndex = 8; // Cambiar el índice del espacio vacío a 8
     private bool _isFinished;
-    [SerializeField] private GameObject endPanel;
-    [SerializeField] private TextMeshProUGUI endPanelTimeText;
+
+    [SerializeField]
+    private GameObject endPanel;
+
+    [SerializeField]
+    private TextMeshProUGUI endPanelTimeText;
 
     private int moveCount = 0;
 
@@ -71,7 +75,12 @@ public class SlidingScriptE : MonoBehaviour
                 endPanel.SetActive(true);
                 var a = GetComponent<TimerScript>();
                 a.StopTimer();
-                endPanelTimeText.text = (a.minutes < 10 ? "0" : "") + a.minutes + ":" + (a.seconds < 10 ? "0" : "") + a.seconds;
+                endPanelTimeText.text =
+                    (a.minutes < 10 ? "0" : "")
+                    + a.minutes
+                    + ":"
+                    + (a.seconds < 10 ? "0" : "")
+                    + a.seconds;
             }
         }
     }
