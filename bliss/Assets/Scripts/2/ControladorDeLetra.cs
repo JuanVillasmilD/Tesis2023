@@ -42,7 +42,12 @@ public class ControladorDeLetra : MonoBehaviour
     public void Reproducir()
     {
         estaPausado = false;
-        MostrarSiguienteFrase(); // Muestra la primera frase al presionar "Play"
+
+        // Verificar si es la primera frase antes de mostrarla
+        if (indiceFrase == 0)
+        {
+            MostrarSiguienteFrase(); // Muestra la primera frase al presionar "Play"
+        }
     }
 
     public void Pausar()

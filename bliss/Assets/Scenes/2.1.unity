@@ -498,7 +498,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c152362672d485542ac2e6b418c140be, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 54290b276769c5e44842f59187525dae, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -777,8 +777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 1548035509}
   countUpText: {fileID: 2043504291}
-  tiempoInicialCountDown: 301
-  tiempoInicialCountUp: 300
+  tiempoInicialCountDown: 141
+  tiempoInicialCountUp: 140
 --- !u!1 &403397835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,12 +1571,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   campoDeTexto: {fileID: 1778487709}
   frases:
-  - texto: Hola
-    duracion: 4
-  - texto: Como
-    duracion: 4
-  - texto: Estais
-    duracion: 4
+  - texto: 
+    duracion: 3
+  - texto: "En la antigua casa, situada en un peque\xF1o pueblo cerca de las monta\xF1as"
+    duracion: 3.9
+  - texto: "se encontraba un viejo jardinero, el cual cuidaba un hermoso jard\xEDn
+      como si"
+    duracion: 4.3
+  - texto: "fuera el tesoro m\xE1s preciado que alguien le hab\xEDa dejado."
+    duracion: 3.6
+  - texto: "La tierra siempre hab\xEDa sido su confidente y su jard\xEDn, su obra
+      maestra."
+    duracion: 4.77
+  - texto: "Era un jard\xEDn como ning\xFAn otro, un verdadero para\xEDso de mariposas."
+    duracion: 4.12
+  - texto: "Pero, cada mariposa que revoloteaba all\xED,"
+    duracion: 2.45
+  - texto: representaba un pensamiento en la mente del jardinero.
+    duracion: 3.43
+  - texto: "Algunas ma\xF1anas el jard\xEDn estaba lleno"
+    duracion: 2.2
+  - texto: "de mariposas hermosas y coloridas, que parec\xEDan danzar en el aire,
+      irradiando"
+    duracion: 4.86
+  - texto: vibrantes tonalidades de azules, rojos y amarillos.
+    duracion: 3.71
+  - texto: "Colores c\xE1lidos que calentaban el alma"
+    duracion: 2.41
+  - texto: "apenas y ten\xEDas un destello de ellos en tus ojos."
+    duracion: 3.57
+  - texto: Otras veces las sombras llegaban a caer
+    duracion: 2.07
+  - texto: "sobre el jard\xEDn, y mariposas oscuras y aterradoras emerg\xEDan de
+      la maleza."
+    duracion: 4.91
+  - texto: "Sus alas te\xF1idas de negrura, imitando la incertidumbre de la noche"
+    duracion: 3.53
+  - texto: y la oscuridad que trae consigo, llegando a ser como reflejos
+    duracion: 3.19
+  - texto: "de los pensamientos m\xE1s oscuros que guardaba en su interior."
+    duracion: 3.71
+  - texto: "A lo largo de los a\xF1os,"
+    duracion: 1.27
+  - texto: "el jardinero lleg\xF3 a comprender la naturaleza de su jard\xEDn mental."
+    duracion: 4.04
+  - texto: "Sab\xEDa que no pod\xEDa llegar a controlar cada mariposa que aparec\xEDa,"
+    duracion: 3.85
+  - texto: "pero s\xED pod\xEDa elegir cuidadosamente cu\xE1les de ellas alimentaron."
+    duracion: 3.62
+  - texto: "Observando con atenci\xF3n,"
+    duracion: 1.43
+  - texto: "decidi\xF3 enfocarse en las mariposas m\xE1s hermosas y positivas,"
+    duracion: 3.74
+  - texto: "aquellas que simbolizaban sus sue\xF1os, esperanzas y anhelos."
+    duracion: 4.02
+  - texto: "El proceso de elecci\xF3n no le fue f\xE1cil, requiri\xF3 tiempo y paciencia."
+    duracion: 6.68
+  - texto: "El jardinero aprendi\xF3 a dejar ir"
+    duracion: 1.7
+  - texto: las mariposas oscuras, a pesar de que a veces luchaban por quedarse.
+    duracion: 4.28
+  - texto: "Cada d\xEDa se forzaba por nutrir las mariposas que radiaban la luz suficiente."
+    duracion: 5.5
+  - texto: "Con el tiempo, su jard\xEDn se transform\xF3 por completo."
+    duracion: 2.87
+  - texto: "Se llen\xF3 de vida y color con las mariposas m\xE1s hermosas en pleno
+      vuelo,"
+    duracion: 4.38
+  - texto: "creando un espect\xE1culo m\xE1gico que atra\xEDa a toda la villa."
+    duracion: 3.77
+  - texto: "La belleza de su jard\xEDn se reflejaba en su propia mente."
+    duracion: 3.18
+  - texto: Pronto, el jardinero se dio cuenta de que, al enfocarse en positivos
+    duracion: 3.38
+  - texto: "y saludables, su mente se volv\xEDa un lugar m\xE1s hermoso"
+    duracion: 4.6
+  - texto: "para vivir y convivir en armon\xEDa consigo mismo S\xED."
+    duracion: 2.98
 --- !u!4 &1294945098
 Transform:
   m_ObjectHideFlags: 0
