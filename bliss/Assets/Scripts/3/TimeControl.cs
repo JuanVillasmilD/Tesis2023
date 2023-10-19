@@ -7,40 +7,47 @@ using System.Collections.Generic;
 public class TimeControl : MonoBehaviour
 {
     private bool isPaused = true; // Inicialmente, la escena está pausada
-    public Button toggleButton; // Referencia al botón en el Canvas
+
+    public GameObject startButton;
+    public GameObject pauseButton;
+    public GameObject resumeButton;
     public TextController textController; // Referencia al TextController
-    private float elapsedTime = 0f; // Tiempo transcurrido en segundos
 
     void Start()
     {
         // Establece la velocidad de tiempo en 0 al inicio
         Time.timeScale = 0;
-
-        // Asigna la función al evento de clic del botón
-        toggleButton.onClick.AddListener(ToggleTimeScale);
     }
 
-    void Update()
+    public void Comenzar()
     {
-        // Actualiza el tiempo transcurrido si no está pausado
-        if (!isPaused)
-        {
-            elapsedTime += Time.deltaTime;
-        }
+        isPaused = false;
+        Time.timeScale = 1f;
+        startButton.SetActive(false);
+        pauseButton.SetActive(true);
+
+        // Llama a la función ToggleAnimation en el TextController para pausar o reanudar la animación de fade
+        textController.ToggleAnimation(isPaused);
     }
 
-    void ToggleTimeScale()
+    public void Pause()
     {
-        isPaused = !isPaused; // Cambia el estado de pausa
+        isPaused = true;
+        Time.timeScale = 0f; // Pausa el tiempo
+        pauseButton.SetActive(false);
+        resumeButton.SetActive(true);
 
-        if (isPaused)
-        {
-            Time.timeScale = 0; // Congela la escena
-        }
-        else
-        {
-            Time.timeScale = 1; // Restaura la velocidad normal de la escena
-        }
+        // Llama a la función ToggleAnimation en el TextController para pausar o reanudar la animación de fade
+        textController.ToggleAnimation(isPaused);
+    }
+
+    // Función para reanudar el juego
+    public void Resume()
+    {
+        isPaused = false;
+        Time.timeScale = 1f;
+        pauseButton.SetActive(true);
+        resumeButton.SetActive(false);
 
         // Llama a la función ToggleAnimation en el TextController para pausar o reanudar la animación de fade
         textController.ToggleAnimation(isPaused);
