@@ -224,9 +224,9 @@ RectTransform:
   m_Father: {fileID: 107357387}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.7658519}
-  m_AnchorMax: {x: 0.5, y: 0.7658519}
-  m_AnchoredPosition: {x: -1.0688, y: 2}
+  m_AnchorMin: {x: 0.5, y: 0.809}
+  m_AnchorMax: {x: 0.5, y: 0.809}
+  m_AnchoredPosition: {x: -1.0688, y: -5}
   m_SizeDelta: {x: 261.4227, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &95516362
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Midnight rain"'
+  m_text: "\"El jard\xEDn de las mariposas\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7dd585a0f60a1ab44b2171facb9107a0, type: 2}
   m_sharedMaterial: {fileID: 6632025304306479836, guid: 7dd585a0f60a1ab44b2171facb9107a0, type: 2}
@@ -276,8 +276,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33
-  m_fontSizeBase: 33
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: -5
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -22
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -427,7 +427,6 @@ RectTransform:
   - {fileID: 1499387002}
   - {fileID: 984123316}
   - {fileID: 881630817}
-  - {fileID: 718820437}
   - {fileID: 1663082430}
   - {fileID: 2043504290}
   - {fileID: 1548035508}
@@ -998,82 +997,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &718820436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 718820437}
-  - component: {fileID: 718820439}
-  - component: {fileID: 718820438}
-  m_Layer: 5
-  m_Name: Cuento-Nuevo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &718820437
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718820436}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5824438, y: 0.5824438, z: 0.5824438}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 107357387}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.79300004, y: 0.293}
-  m_AnchorMax: {x: 0.79300004, y: 0.293}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 366, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &718820438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718820436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9098039}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 50fc300aafbc8894197df94a5ed9dfd9, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &718820439
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718820436}
-  m_CullTransparentMesh: 1
 --- !u!1 &881630816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1418,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 107357387}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.11800001}
   m_AnchorMax: {x: 0.5, y: 0.11800001}
@@ -1867,7 +1790,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 107357387}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.63000005, y: 0.23}
   m_AnchorMax: {x: 0.63000005, y: 0.23}
@@ -2002,7 +1925,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 107357387}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.23}
   m_AnchorMax: {x: 0.5, y: 0.23}
@@ -2078,7 +2001,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 107357387}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3694815, y: 0.23}
   m_AnchorMax: {x: 0.3694815, y: 0.23}
@@ -2289,7 +2212,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 107357387}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3694815, y: 0.23}
   m_AnchorMax: {x: 0.3694815, y: 0.23}
