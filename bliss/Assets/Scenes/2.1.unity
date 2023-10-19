@@ -1511,9 +1511,9 @@ MonoBehaviour:
   - texto: "Pero, cada mariposa que revoloteaba all\xED,"
     duracion: 2.45
   - texto: representaba un pensamiento en la mente del jardinero.
-    duracion: 3.43
+    duracion: 3.45
   - texto: "Algunas ma\xF1anas el jard\xEDn estaba lleno"
-    duracion: 2.2
+    duracion: 2.7
   - texto: "de mariposas hermosas y coloridas, que parec\xEDan danzar en el aire,
       irradiando"
     duracion: 4.86
@@ -1817,7 +1817,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -08:34
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -2239,7 +2239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 02:45
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}

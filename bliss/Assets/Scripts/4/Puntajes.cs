@@ -22,7 +22,7 @@ public class Puntajes : MonoBehaviour
         {
             if (puntajes[i] != float.MaxValue)
             {
-                puntajesTexto += $"{i + 1}. {FormatearTiempo(puntajes[i])}\n\n\n";
+                puntajesTexto += $"{FormatearTiempo(puntajes[i])}\n\n\n";
             }
         }
 
