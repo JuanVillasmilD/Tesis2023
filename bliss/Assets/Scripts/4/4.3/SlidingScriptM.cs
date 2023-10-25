@@ -38,7 +38,7 @@ public class SlidingScriptM : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit)
             {
-                if (Vector2.Distance(emptySpace.position, hit.transform.position) < 1.7)
+                if (Vector2.Distance(emptySpace.position, hit.transform.position) < 1.5)
                 {
                     Vector2 lastEmptySpacePosition = emptySpace.position;
                     TilesScript thisTile = hit.transform.GetComponent<TilesScript>();
