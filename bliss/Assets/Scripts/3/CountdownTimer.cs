@@ -1,12 +1,22 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
     public TextMeshProUGUI timerText; // Referencia al campo de texto TMP para mostrar el temporizador
+    public GameObject elementToDeactivate; // Elemento a desactivar cuando el tiempo llegue a 0
+    public GameObject elementToActivate; // Elemento a activar cuando el tiempo llegue a 0
+    public Image imageToActivate;
+
     public float countdownDuration = 300.0f; // Duración del temporizador en segundos (5 minutos por defecto)
     private float currentTime; // Tiempo actual del temporizador
     private bool isCountingDown; // Indica si el temporizador está en marcha
+
+    public string nombreEscena = "";
+    public string nombreEscena2 = "";
 
     private void Start()
     {
@@ -21,10 +31,11 @@ public class CountdownTimer : MonoBehaviour
         {
             currentTime -= Time.deltaTime;
 
-            if (currentTime <= 0)
+            if (currentTime <= 1)
             {
                 currentTime = 0;
                 isCountingDown = false;
+                StartCoroutine(ActivateImageAndEmptyCoroutine());
             }
 
             UpdateTimerText();
@@ -60,5 +71,42 @@ public class CountdownTimer : MonoBehaviour
         currentTime = countdownDuration;
         isCountingDown = true;
         UpdateTimerText();
+    }
+
+    private IEnumerator ActivateImageAndEmptyCoroutine()
+    {
+        elementToDeactivate.SetActive(false);
+        // Activa la imagen
+        imageToActivate.gameObject.SetActive(true);
+
+        // Espera 0.25 segundos
+        yield return new WaitForSeconds(0.25f);
+
+        // Desactiva la imagen
+        imageToActivate.gameObject.SetActive(false);
+
+        // Activa el emptyObject
+        elementToActivate.SetActive(true);
+    }
+
+    public void RepetirEscena()
+    {
+        // Carga la nueva escena
+        SceneManager.LoadScene(nombreEscena);
+    }
+
+    public void SalirEscena()
+    {
+        // Encuentra el objeto TimeManager en la escena actual
+        TimeManager timeManager = FindObjectOfType<TimeManager>();
+
+        if (timeManager != null)
+        {
+            // Establece la velocidad de tiempo a 1 utilizando el TimeManager
+            timeManager.SetTimeScale(1);
+        }
+
+        // Carga la nueva escena
+        SceneManager.LoadScene(nombreEscena2);
     }
 }
