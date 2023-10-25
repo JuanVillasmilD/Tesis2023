@@ -6,6 +6,8 @@ using Firebase;
 using Firebase.Auth;
 using Firebase.Extensions;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class FireBaseManager : MonoBehaviour
 {
@@ -112,7 +114,7 @@ public class FireBaseManager : MonoBehaviour
         }
         else
         {
-            AuthUIManager.instance.LoginScreen();
+            AuthUIManager.instance.BackToMainScreen();
         }
     }
 
@@ -124,7 +126,7 @@ public class FireBaseManager : MonoBehaviour
         }
         else
         {
-            AuthUIManager.instance.LoginScreen();
+            AuthUIManager.instance.BackToMainScreen();
         }
     }
 
@@ -138,6 +140,7 @@ public class FireBaseManager : MonoBehaviour
             {
                 UnityEngine.Debug.Log("Signed Out");
                 GameManager.instance.ChangeScene(1);
+                AuthUIManager.instance.BackToMainScreen();
             }
 
             user = auth.CurrentUser;
@@ -174,17 +177,16 @@ public class FireBaseManager : MonoBehaviour
 
     private IEnumerator LoginLogic(string _email, string _password)
     {
-        Credential credential = EmailAuthProvider.GetCredential(_email, _password);
+        var loginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
 
-        var loginTask = auth.SignInWithCredentialAsync(credential);
-
-        yield return new WaitUntil(predicate: () => loginTask.IsCompleted);
+        yield return new WaitUntil(() => loginTask.IsCompleted);
 
         if (loginTask.Exception != null)
         {
-            FirebaseException firebaseException = (FirebaseException)loginTask.Exception.GetBaseException();
+            FirebaseException firebaseException = (FirebaseException)
+                loginTask.Exception.GetBaseException();
             AuthError error = (AuthError)firebaseException.ErrorCode;
-            string output = "Error desconocido, intente nuevamente.";
+            string output;
 
             switch (error)
             {
@@ -203,15 +205,18 @@ public class FireBaseManager : MonoBehaviour
                 case AuthError.UserNotFound:
                     output = "Usuario no encontrado.";
                     break;
+                default:
+                    output = "Correo y/o contraseña inválida.";
+                    break;
             }
+
             loginOutputText.text = output;
         }
         else
         {
             if (user.IsEmailVerified)
             {
-                yield return new WaitForSeconds(1f);
-                GameManager.instance.ChangeScene(1);
+                SceneManager.LoadScene(2);
             }
             else
             {

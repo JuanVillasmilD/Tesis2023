@@ -7,8 +7,6 @@ using System.Collections.Generic;
 public class TimeControl : MonoBehaviour
 {
     private bool isPaused = true; // Inicialmente, la escena está pausada
-
-    public GameObject startButton;
     public GameObject pauseButton;
     public GameObject resumeButton;
     public TextController textController; // Referencia al TextController
@@ -16,18 +14,7 @@ public class TimeControl : MonoBehaviour
     void Start()
     {
         // Establece la velocidad de tiempo en 0 al inicio
-        Time.timeScale = 0;
-    }
-
-    public void Comenzar()
-    {
-        isPaused = false;
-        Time.timeScale = 1f;
-        startButton.SetActive(false);
-        pauseButton.SetActive(true);
-
-        // Llama a la función ToggleAnimation en el TextController para pausar o reanudar la animación de fade
-        textController.ToggleAnimation(isPaused);
+        Time.timeScale = 1;
     }
 
     public void Pause()
