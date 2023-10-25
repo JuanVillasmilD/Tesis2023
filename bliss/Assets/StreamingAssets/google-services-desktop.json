@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "82793048144",
+    "firebase_url": "https://bliss-tesis-default-rtdb.firebaseio.com",
     "project_id": "bliss-tesis",
     "storage_bucket": "bliss-tesis.appspot.com"
   },
@@ -10,6 +11,25 @@
         "mobilesdk_app_id": "1:82793048144:android:7c580c0d3e5040f6a44955",
         "android_client_info": {
           "package_name": "com.DefaultCompany.com.unity.template.mobile2D"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcIng7EcQOCNlApjnTGwnkNnVSYFon0Qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82793048144:android:b9a19f15bb54342ea44955",
+        "android_client_info": {
+          "package_name": "com.company"
         }
       },
       "oauth_client": [],
