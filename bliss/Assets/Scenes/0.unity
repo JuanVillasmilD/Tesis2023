@@ -720,7 +720,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36551696, y: 0.69572234}
   m_AnchorMax: {x: 0.36551696, y: 0.69572234}
-  m_AnchoredPosition: {x: 135.89, y: -28}
+  m_AnchoredPosition: {x: 157, y: -28}
   m_SizeDelta: {x: 593.94, y: 97.7227}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &64098283
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -20
+  m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Email inv\xE1lido"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80d5fae67fd7d3546b15fe7d6f802b5d, type: 2}
   m_sharedMaterial: {fileID: -5625470297684174232, guid: 80d5fae67fd7d3546b15fe7d6f802b5d, type: 2}
@@ -1951,8 +1951,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280287408
-  m_fontColor: {r: 0.6901961, g: 0, b: 0.1254902, a: 1}
+    rgba: 4280756160
+  m_fontColor: {r: 0.7529412, g: 0.15294118, b: 0.15294118, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1969,8 +1969,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4839,7 +4839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.7772408}
   m_AnchorMax: {x: 0.5, y: 0.7772408}
-  m_AnchoredPosition: {x: -12, y: -28}
+  m_AnchoredPosition: {x: 9.109985, y: -28}
   m_SizeDelta: {x: 211.7778, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1015082634
@@ -5968,7 +5968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1256220507
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7409,7 +7409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Email inv\xE1lido."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80d5fae67fd7d3546b15fe7d6f802b5d, type: 2}
   m_sharedMaterial: {fileID: -5625470297684174232, guid: 80d5fae67fd7d3546b15fe7d6f802b5d, type: 2}
@@ -7418,8 +7418,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 0.6901961, g: 0, b: 0.1254902, a: 1}
+    rgba: 4280756160
+  m_fontColor: {r: 0.7529412, g: 0.15294118, b: 0.15294118, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7436,8 +7436,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8902,7 +8902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1895236775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8990,17 +8990,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "Email in\xE1vlido."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 80d5fae67fd7d3546b15fe7d6f802b5d, type: 2}
+  m_sharedMaterial: {fileID: -5625470297684174232, guid: 80d5fae67fd7d3546b15fe7d6f802b5d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280287408
-  m_fontColor: {r: 0.6901961, g: 0, b: 0.1254902, a: 1}
+    rgba: 4280756160
+  m_fontColor: {r: 0.754717, g: 0.15236738, b: 0.15236738, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9017,8 +9017,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
