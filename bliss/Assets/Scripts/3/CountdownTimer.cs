@@ -9,6 +9,9 @@ public class CountdownTimer : MonoBehaviour
     public TextMeshProUGUI timerText; // Referencia al campo de texto TMP para mostrar el temporizador
     public GameObject elementToDeactivate; // Elemento a desactivar cuando el tiempo llegue a 0
     public GameObject elementToActivate; // Elemento a activar cuando el tiempo llegue a 0
+    public GameObject buttonToDeactivate;
+    public GameObject buttonpauseToDeactivate;
+
     public Image imageToActivate;
 
     public float countdownDuration = 300.0f; // Duración del temporizador en segundos (5 minutos por defecto)
@@ -76,6 +79,8 @@ public class CountdownTimer : MonoBehaviour
     private IEnumerator ActivateImageAndEmptyCoroutine()
     {
         elementToDeactivate.SetActive(false);
+        buttonToDeactivate.gameObject.SetActive(false);
+        buttonpauseToDeactivate.gameObject.SetActive(false);
         // Activa la imagen
         imageToActivate.gameObject.SetActive(true);
 

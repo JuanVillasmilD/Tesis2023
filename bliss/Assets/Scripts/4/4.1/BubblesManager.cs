@@ -12,7 +12,6 @@ public class BubblesManager : MonoBehaviour
     private float tiempoTranscurrido = 0f;
 
     public Temporizador temporizador;
-    public TextMeshProUGUI puntajesTMP; // Asigna el objeto TMP en el Inspector.
 
     private void Update()
     {
@@ -101,8 +100,5 @@ public class BubblesManager : MonoBehaviour
                 puntajesTexto += $"{i + 1}. {FormatearTiempo(puntaje)}\n";
             }
         }
-
-        // Actualiza el texto del objeto TMP.
-        puntajesTMP.text = puntajesTexto;
     }
 }
