@@ -569,12 +569,98 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   campoDeTexto: {fileID: 586683684}
   frases:
-  - texto: Hola
-    duracion: 4
-  - texto: Como
-    duracion: 4
-  - texto: Estais
-    duracion: 4
+  - texto: 
+    duracion: 3.86
+  - texto: "Hab\xEDa una vez un peque\xF1o pueblo enclavado en un rincon olvidado
+      del mundo."
+    duracion: 4.34
+  - texto: En este pueblo, las personas a menudo
+    duracion: 2.42
+  - texto: "sent\xEDan que estaban siendo manipuladas como marionetas."
+    duracion: 3.43
+  - texto: Sus cuerdas invisibles estaban atadas
+    duracion: 1.88
+  - texto: "a las expectativas sociales, a la b\xFAsqueda constante de la perfecci\xF3n"
+    duracion: 3.82
+  - texto: y al deseo de encajar en un molde preestablecido.
+    duracion: 3.45
+  - texto: "Cada d\xEDa, los habitantes de este pueblo se"
+    duracion: 2.37
+  - texto: esforzaban por bailar al ritmo de las demandas de la sociedad,
+    duracion: 3.25
+  - texto: "como si fueran t\xEDtere obedientes en un espect\xE1culo que nunca terminaba."
+    duracion: 4.6
+  - texto: "Pero un d\xEDa algo inusual sucedi\xF3."
+    duracion: 2.43
+  - texto: "Un ni\xF1o de ojos curiosos y cabellos"
+    duracion: 2.45
+  - texto: "alborotados comenz\xF3 a cuestionar por qu\xE9 todos segu\xEDan danzando
+      al mismo ritmo."
+    duracion: 4.69
+  - texto: "Observ\xF3 a su alrededor y not\xF3 que sus"
+    duracion: 1.89
+  - texto: "amigos, sus padres y todos los dem\xE1s se forzaban por cumplir con las
+      expectativas"
+    duracion: 4.39
+  - texto: "de la sociedad, viviendo vidas que no les pertenec\xEDan."
+    duracion: 3.37
+  - texto: "Aquel ni\xF1o, cuya alma brillaba con una luz"
+    duracion: 2.75
+  - texto: "especial, decidi\xF3 tomar un camino diferente."
+    duracion: 3.15
+  - texto: "Decidi\xF3 cortar las cuerdas invisibles"
+    duracion: 1.38
+  - texto: "que lo ataban y empezar a moverse al ritmo de su propio coraz\xF3n."
+    duracion: 4.32
+  - texto: "Al principio, la gente del pueblo mir\xF3 al ni\xF1o con asombro y algunos
+      con desd\xE9n."
+    duracion: 5.07
+  - texto: "\xBFC\xF3mo pod\xEDa atreverse a desafiar a las reglas preestablecidas?"
+    duracion: 4.12
+  - texto: "Pero el ni\xF1o no se dej\xF3 intimidar."
+    duracion: 2.56
+  - texto: "A medida que segu\xEDa su propio camino,"
+    duracion: 2.56
+  - texto: "inspir\xF3 a otros con su valent\xEDa y autenticidad."
+    duracion: 2.94
+  - texto: Algunos adultos comenzaron a cuestionar sus propias vidas,
+    duracion: 3.12
+  - texto: "mientras que los j\xF3venes encontraron en \xE9l un modelo a seguir."
+    duracion: 3.59
+  - texto: "Pronto, el pueblo se llen\xF3 de una energ\xEDa nueva y revitalizada."
+    duracion: 3.77
+  - texto: Las personas se permitieron explorar sus
+    duracion: 2.55
+  - texto: pasiones, descubrir sus talentos y aprender de sus errores.
+    duracion: 3.81
+  - texto: En lugar de juzgarse mutuamente,
+    duracion: 1.79
+  - texto: comenzaron a apoyarse en sus esfuerzos individuales.
+    duracion: 3.15
+  - texto: "Se dieron cuenta que cada uno de ellos ten\xEDa su propio ritmo y que
+      no hab\xEDa raz\xF3n"
+    duracion: 4.29
+  - texto: "para estresarse ni condenarse por no ser mejor que los dem\xE1s."
+    duracion: 4.33
+  - texto: "Todos eran \xFAnicos a su manera."
+    duracion: 2.64
+  - texto: "Y as\xED, en este peque\xF1o pueblo se escribi\xF3 una nueva historia,"
+    duracion: 3.37
+  - texto: "una historia que demostraba que la presi\xF3n por cumplir est\xE1ndares
+      sociales pod\xEDa"
+    duracion: 4.67
+  - texto: "ser como las cuerdas de una marioneta, pero tambi\xE9n mostraba que siempre
+      hab\xEDa"
+    duracion: 4.67
+  - texto: espacio para la autenticidad y la libertad.
+    duracion: 2.45
+  - texto: "Cada persona pod\xEDa ser mejor a su manera y eso era lo que realmente
+      importaba."
+    duracion: 5.87
+  - texto: "El baile de las marionetas se hab\xEDa"
+    duracion: 1.85
+  - texto: convertido en la danza de la libertad, la autenticidad y el amor propio.
+    duracion: 3.83
 --- !u!4 &388585102
 Transform:
   m_ObjectHideFlags: 0
@@ -694,7 +780,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c152362672d485542ac2e6b418c140be, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 81761453883ec9442aa19f478ed39ae8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -867,8 +953,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: He was sunshine, I was midnight rain, he wanted the comfortable, I wanted
-    the pain...
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -956,7 +1041,6 @@ GameObject:
   - component: {fileID: 615599651}
   - component: {fileID: 615599654}
   - component: {fileID: 615599653}
-  - component: {fileID: 615599652}
   m_Layer: 5
   m_Name: BarraSubtitulos
   m_TagString: Untagged
@@ -984,27 +1068,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 35}
   m_SizeDelta: {x: 906, y: 464}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &615599652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615599650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cea2868dddc0d498b5a8e938908cbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 586683684}
-  countdownText: {fileID: 0}
-  phrases:
-  - phrase: Ahola que ya sabemos como es
-    duration: 2
-  - phrase: Tenemos que pensar en lo que
-    duration: 2
-  - phrase: Podemos crear en un futuro
-    duration: 2
 --- !u!114 &615599653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,7 +1164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 02:45
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -1547,6 +1610,7 @@ GameObject:
   - component: {fileID: 1076468280}
   - component: {fileID: 1076468282}
   - component: {fileID: 1076468281}
+  - component: {fileID: 1076468283}
   m_Layer: 5
   m_Name: Cuento-Fondo
   m_TagString: Untagged
@@ -1612,6 +1676,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076468279}
   m_CullTransparentMesh: 1
+--- !u!95 &1076468283
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076468279}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b0638b796080c6469aedd8fb6ab8020, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1216463983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,7 +1754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -08:34
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -2070,8 +2154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 1216463985}
   countUpText: {fileID: 687636545}
-  tiempoInicialCountDown: 301
-  tiempoInicialCountUp: 300
+  tiempoInicialCountDown: 144
+  tiempoInicialCountUp: 143
 --- !u!4 &1642514057
 Transform:
   m_ObjectHideFlags: 0

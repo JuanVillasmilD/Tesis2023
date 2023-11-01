@@ -154,8 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countDownText: {fileID: 577021434}
   countUpText: {fileID: 167459900}
-  tiempoInicialCountDown: 301
-  tiempoInicialCountUp: 300
+  tiempoInicialCountDown: 154
+  tiempoInicialCountUp: 153
 --- !u!4 &64598900
 Transform:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 02:45
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: -08:34
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -545,7 +545,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c152362672d485542ac2e6b418c140be, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1ada95c4a5da7f34cafb453c9dea8614, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -643,8 +643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f0c3449025d1040a0ace3dd7aea49b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resumeButton: {fileID: 0}
-  pauseButton: {fileID: 0}
+  resumeButton: {fileID: 800360552}
+  pauseButton: {fileID: 1398869789}
 --- !u!4 &614939272
 Transform:
   m_ObjectHideFlags: 0
@@ -982,12 +982,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   campoDeTexto: {fileID: 1642189945}
   frases:
-  - texto: Hola
-    duracion: 4
-  - texto: Como
-    duracion: 4
-  - texto: Estais
-    duracion: 4
+  - texto: 
+    duracion: 3.8
+  - texto: En un pintoresco pueblo costero,
+    duracion: 2.29
+  - texto: donde el rumor de las olas rompiendo contra la orilla era una banda sonora
+    duracion: 4.35
+  - texto: "constante, viv\xEDa una joven de ojos inquietos."
+    duracion: 3.99
+  - texto: "Al ponerse el sol, tras el anochecer, se aventuraba a la playa y se perd\xEDa
+      en"
+    duracion: 4.93
+  - texto: "la contemplaci\xF3n del mar embravecido, durante las tormentas."
+    duracion: 3.95
+  - texto: Las imponentes olas y el rujir de la tempestad reflejaban
+    duracion: 4.37
+  - texto: "perfectamente el caos que sent\xEDa en su interior."
+    duracion: 5.03
+  - texto: "Esa inquietud emocional era como un vendaval constante en su coraz\xF3n,"
+    duracion: 4.12
+  - texto: una tormenta sin fin que amenazaba con arrastrarla.
+    duracion: 4.08
+  - texto: "Se sent\xEDa perdida, incapaz de encontrar la paz que anhelaba."
+    duracion: 5.4
+  - texto: En esas noches en la playa, mientras observaba el mar embravecido,
+    duracion: 4.36
+  - texto: "a menudo se preguntaba si alguna vez encontrar\xEDa la calma en su interior."
+    duracion: 5.48
+  - texto: "Un d\xEDa, mientras caminaba por el puerto,"
+    duracion: 3.56
+  - texto: "se top\xF3 con un anciano pescador cansado y un poco desgastado debido
+      a los a\xF1os"
+    duracion: 4.85
+  - texto: que dio por luchar contra las aguas turbulentas.
+    duracion: 4.96
+  - texto: "Decidi\xF3 acercarse y entablar una conversaci\xF3n."
+    duracion: 3.23
+  - texto: "Le confi\xF3 sus inquietudes y como el mar"
+    duracion: 3.13
+  - texto: "embravesido parec\xEDa reflejar perfectamente su estado interior."
+    duracion: 5.35
+  - texto: "El anciano pescador asinti\xF3 con sabidur\xEDa en sus ojos cansados
+      y le dijo El mar,"
+    duracion: 5.97
+  - texto: "mi joven amiga, es mucho m\xE1s que solo agua y olas."
+    duracion: 4.43
+  - texto: "Tambi\xE9n puede ser un espejo de nuestras emociones."
+    duracion: 3.68
+  - texto: Al igual que las tormentas en alta mar,
+    duracion: 2.8
+  - texto: nuestras emociones pueden ser intensas y abrumadoras en ocasiones.
+    duracion: 4.52
+  - texto: "Pero as\xED como las olas finalmente encuentran la calma en la orilla,"
+    duracion: 4.84
+  - texto: "tambi\xE9n nuestras emociones pueden encontrar la tranquilidad."
+    duracion: 4.52
+  - texto: Con el tiempo,
+    duracion: 0.83
+  - texto: "la joven descubri\xF3 que las emociones, aunque a veces turbulentas,"
+    duracion: 5.03
+  - texto: eran tan naturales como las olas que rompen en la playa.
+    duracion: 5.41
+  - texto: "Aprendi\xF3 a navegar por las aguas de su interior con valent\xEDa y
+      determinaci\xF3n."
+    duracion: 5.47
+  - texto: "Las tormentas segu\xEDan llegando, pero ya no la asustaban."
+    duracion: 4.68
+  - texto: "En cambio, las abrazaba como parte de su propio ser y sab\xEDa que,"
+    duracion: 4.73
+  - texto: "al igual que el mar, tambi\xE9n encontrar\xEDa la serenidad despu\xE9s
+      de cada tormenta."
+    duracion: 5.22
 --- !u!4 &779589224
 Transform:
   m_ObjectHideFlags: 0
@@ -1729,6 +1794,7 @@ GameObject:
   - component: {fileID: 1548134088}
   - component: {fileID: 1548134090}
   - component: {fileID: 1548134089}
+  - component: {fileID: 1548134091}
   m_Layer: 5
   m_Name: Cuento-Fondo
   m_TagString: Untagged
@@ -1794,6 +1860,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548134087}
   m_CullTransparentMesh: 1
+--- !u!95 &1548134091
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548134087}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e5ee3fa991adb6429d7e4a26f1afecc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1642189943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,8 +1938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Talk your talk and go viral, I just need this love spiral. Get it off your
-    chest, get it off my chest....
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
   m_sharedMaterial: {fileID: 631189781650326395, guid: fd01589a2c9668646ab944a5653fba48, type: 2}
@@ -1941,9 +2026,8 @@ GameObject:
   - component: {fileID: 1735570716}
   - component: {fileID: 1735570719}
   - component: {fileID: 1735570718}
-  - component: {fileID: 1735570717}
   m_Layer: 5
-  m_Name: BarraSubtitulos (1)
+  m_Name: BarraSubtitulos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1969,27 +2053,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 25}
   m_SizeDelta: {x: 906, y: 464}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1735570717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735570715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25cea2868dddc0d498b5a8e938908cbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMeshPro: {fileID: 1642189945}
-  countdownText: {fileID: 0}
-  phrases:
-  - phrase: Ahola que ya sabemos como es
-    duration: 2
-  - phrase: Tenemos que pensar en lo que
-    duration: 2
-  - phrase: Podemos crear en un futuro
-    duration: 2
 --- !u!114 &1735570718
 MonoBehaviour:
   m_ObjectHideFlags: 0

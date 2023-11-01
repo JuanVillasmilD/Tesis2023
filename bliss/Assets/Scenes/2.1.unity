@@ -497,7 +497,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 54290b276769c5e44842f59187525dae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 145c1d9a177f61045b4a5874075987e9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   campoDeTexto: {fileID: 1778487709}
   frases:
   - texto: 
-    duracion: 3
+    duracion: 3.5
   - texto: "En la antigua casa, situada en un peque\xF1o pueblo cerca de las monta\xF1as"
     duracion: 3.9
   - texto: "se encontraba un viejo jardinero, el cual cuidaba un hermoso jard\xEDn
