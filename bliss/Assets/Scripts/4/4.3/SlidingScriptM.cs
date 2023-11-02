@@ -10,19 +10,25 @@ public class SlidingScriptM : MonoBehaviour
 
     [SerializeField]
     private TilesScript[] tiles;
-    private int emptySpaceIndex = 11; // Cambiar el índice del espacio vacío a 8
+    private int emptySpaceIndex = 11;
     private bool _isFinished;
 
     [SerializeField]
     private GameObject endPanel;
 
     [SerializeField]
-    private TextMeshProUGUI endPanelTimeText;
+    private TextMeshProUGUI moveCountText;
 
     private int moveCount = 0;
+    private int score = 6000;
 
     [SerializeField]
-    private TextMeshProUGUI moveCountText; // Agrega el campo para el componente TMP en el Inspector
+    private TextMeshProUGUI scoreText;
+
+    private float elapsedTime = 0f;
+
+    [SerializeField]
+    private TextMeshProUGUI endPanelTimeText;
 
     void Start()
     {
@@ -32,7 +38,12 @@ public class SlidingScriptM : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (score > 0 && !_isFinished)
+        {
+            elapsedTime += Time.deltaTime;
+        }
+
+        if (score > 0 && Input.GetMouseButtonDown(0))
         {
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
@@ -52,8 +63,14 @@ public class SlidingScriptM : MonoBehaviour
                     // Incrementa el contador de movimientos
                     moveCount++;
 
-                    // Actualiza el texto del contador en el componente TMP
+                    // Resta 20 puntos del puntaje por cada movimiento
+                    score -= 20;
+
+                    // Actualiza el texto del contador de movimientos en el componente TMP
                     moveCountText.text = moveCount.ToString();
+
+                    // Actualiza el texto del puntaje en el componente TMP
+                    scoreText.text = score.ToString() + "pts";
                 }
             }
         }
@@ -73,14 +90,20 @@ public class SlidingScriptM : MonoBehaviour
             {
                 _isFinished = true;
                 endPanel.SetActive(true);
+                // Muestra el puntaje en el EndPanel
+                scoreText.text = score.ToString() + "pts";
+
+                // Calcula el tiempo en formato 00:00
                 var a = GetComponent<TimerScript>();
                 a.StopTimer();
-                endPanelTimeText.text =
-                    (a.minutes < 10 ? "0" : "")
-                    + a.minutes
-                    + ":"
-                    + (a.seconds < 10 ? "0" : "")
-                    + a.seconds;
+                int minutes = Mathf.FloorToInt(elapsedTime / 60);
+                int seconds = Mathf.FloorToInt(elapsedTime % 60);
+                string timeString = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+                // Muestra el tiempo en el EndPanel
+                endPanelTimeText.text = timeString;
+
+                SaveData(); // Llama a la función para guardar los datos
             }
         }
     }
@@ -92,22 +115,22 @@ public class SlidingScriptM : MonoBehaviour
 
     public void Shuffle()
     {
-        if (emptySpaceIndex != 11) // Cambiar la comprobación al nuevo índice del espacio vacío
+        if (emptySpaceIndex != 11)
         {
-            var tileOn11LastPos = tiles[11].targetPosition; // Cambiar el índice a 8
+            var tileOn11LastPos = tiles[11].targetPosition;
             tiles[11].targetPosition = emptySpace.position;
             emptySpace.position = tileOn11LastPos;
-            tiles[emptySpaceIndex] = tiles[11]; // Cambiar el índice a 8
+            tiles[emptySpaceIndex] = tiles[11];
             tiles[11] = null;
-            emptySpaceIndex = 11; // Cambiar el índice a 8
+            emptySpaceIndex = 11;
         }
         int inversion;
         do
         {
-            for (int i = 0; i <= 10; i++) // Cambiar el rango a 7
+            for (int i = 0; i <= 10; i++)
             {
                 var lastPos = tiles[i].targetPosition;
-                int randomIndex = Random.Range(0, 10); // Cambiar el rango a 7
+                int randomIndex = Random.Range(0, 10);
                 tiles[i].targetPosition = tiles[randomIndex].targetPosition;
                 tiles[randomIndex].targetPosition = lastPos;
                 var tile = tiles[i];
@@ -152,5 +175,43 @@ public class SlidingScriptM : MonoBehaviour
             inversionsSum += thisTileInversion;
         }
         return inversionsSum;
+    }
+
+    void SaveData()
+    {
+        // Obtener los 3 mejores puntajes y tiempos almacenados anteriormente.
+        float[] mejoresPuntajesSM = new float[3];
+        float[] mejoresTiemposSM = new float[3];
+
+        for (int i = 0; i < 3; i++)
+        {
+            mejoresPuntajesSM[i] = PlayerPrefs.GetFloat($"MejorPuntajeSM{i}", float.MinValue);
+            mejoresTiemposSM[i] = PlayerPrefs.GetFloat($"MejorTiempoSM{i}", float.MaxValue);
+        }
+
+        // Comprobar si el puntaje actual es mejor que los puntajes almacenados.
+        for (int i = 0; i < 3; i++)
+        {
+            if (score > mejoresPuntajesSM[i])
+            {
+                float tempPuntaje = mejoresPuntajesSM[i];
+                float tempTiempo = mejoresTiemposSM[i];
+
+                mejoresPuntajesSM[i] = score;
+                mejoresTiemposSM[i] = elapsedTime;
+
+                score = (int)tempPuntaje; // Establece el puntaje actual al puntaje sobrescrito
+                elapsedTime = tempTiempo; // Establece el tiempo actual al tiempo sobrescrito
+            }
+        }
+
+        // Almacenar los tres mejores puntajes y tiempos.
+        for (int i = 0; i < 3; i++)
+        {
+            PlayerPrefs.SetFloat($"MejorPuntajeSM{i}", mejoresPuntajesSM[i]);
+            PlayerPrefs.SetFloat($"MejorTiempoSM{i}", mejoresTiemposSM[i]);
+        }
+
+        PlayerPrefs.Save(); // Guarda los datos
     }
 }

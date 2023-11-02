@@ -1,20 +1,20 @@
 using UnityEngine;
 using TMPro;
 
-public class PuntajesR : MonoBehaviour
+public class PuntajesSE : MonoBehaviour
 {
     public TextMeshProUGUI puntajesTMP;
 
     private void Start()
     {
         // Recupera los puntajes y tiempos almacenados en PlayerPrefs.
-        float[] puntajesR = new float[3];
-        float[] tiemposR = new float[3];
+        float[] puntajesSE = new float[3];
+        float[] tiemposSE = new float[3];
 
         for (int i = 0; i < 3; i++)
         {
-            puntajesR[i] = PlayerPrefs.GetFloat($"MejorPuntajeR{i}", float.MaxValue);
-            tiemposR[i] = PlayerPrefs.GetFloat($"MejorTiempoR{i}", float.MaxValue);
+            puntajesSE[i] = PlayerPrefs.GetFloat($"MejorPuntajeSE{i}", float.MaxValue);
+            tiemposSE[i] = PlayerPrefs.GetFloat($"MejorTiempoSE{i}", float.MaxValue);
         }
 
         // Inicializa la variable puntajesTexto.
@@ -22,9 +22,9 @@ public class PuntajesR : MonoBehaviour
 
         for (int i = 0; i < 3; i++)
         {
-            if (puntajesR[i] != float.MaxValue)
+            if (puntajesSE[i] != float.MaxValue)
             {
-                puntajesTexto += $"{puntajesR[i]}pts - " + $"{FormatearTiempo(tiemposR[i])}\n\n\n";
+                puntajesTexto += $"{puntajesSE[i]}pts - " + $"{FormatearTiempo(tiemposSE[i])}\n\n\n";
             }
         }
 

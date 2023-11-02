@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject exitMenu;
     public string sceneToLoadOnExit;
 
     // Función para pausar el juego
@@ -32,5 +33,15 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(sceneToLoadOnExit);
+    }
+
+    public void ExitPanelIn()
+    {
+        exitMenu.SetActive(true);
+    }
+
+    public void ExitPanelOut()
+    {
+        exitMenu.SetActive(false);
     }
 }

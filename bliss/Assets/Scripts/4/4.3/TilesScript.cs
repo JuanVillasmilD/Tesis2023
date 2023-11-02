@@ -17,7 +17,7 @@ public class TilesScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, targetPosition, 0.15f);
+        transform.position = Vector3.Lerp(transform.position, targetPosition, 0.20f);
         if (targetPosition == correctPosition)
         {
             inRightPlace = true;

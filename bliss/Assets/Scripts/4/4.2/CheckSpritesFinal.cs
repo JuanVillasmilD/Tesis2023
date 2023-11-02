@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System;
 
 public class CheckSpritesFinal : MonoBehaviour
 {
@@ -57,19 +58,20 @@ public class CheckSpritesFinal : MonoBehaviour
         }
     }
 
-    // Muestra el tiempo transcurrido en el objeto de texto TMP
+    // Muestra el tiempo transcurrido en el objeto de texto TMP en formato "00:00"
     void DisplayElapsedTime()
     {
         if (timeText != null)
         {
-            timeText.text = elapsedTime.ToString("F2") + " segundos"; // Formatea y muestra el tiempo
+            TimeSpan timeSpan = TimeSpan.FromSeconds(elapsedTime);
+            timeText.text = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
         }
     }
 
     // Calcula el puntaje y lo muestra en el objeto de texto TMP
     void CalculateScore()
     {
-        int timePenalty = Mathf.FloorToInt(elapsedTime * 15); // Calcula la penalización de tiempo
+        int timePenalty = Mathf.FloorToInt(elapsedTime * 20); // Calcula la penalización de tiempo
         score -= timePenalty; // Resta la penalización al puntaje
         if (score < 0)
         {
@@ -78,7 +80,7 @@ public class CheckSpritesFinal : MonoBehaviour
 
         if (scoreText != null)
         {
-            scoreText.text = score.ToString() + " pts"; // Muestra el puntaje final
+            scoreText.text = score.ToString() + "pts"; // Muestra el puntaje final
         }
     }
 
@@ -91,14 +93,14 @@ public class CheckSpritesFinal : MonoBehaviour
 
         for (int i = 0; i < 3; i++)
         {
-            mejoresPuntajesR[i] = PlayerPrefs.GetFloat($"MejorPuntajeR{i}", float.MaxValue);
+            mejoresPuntajesR[i] = PlayerPrefs.GetFloat($"MejorPuntajeR{i}", float.MinValue);
             mejoresTiemposR[i] = PlayerPrefs.GetFloat($"MejorTiempoR{i}", float.MaxValue);
         }
 
         // Comprobar si el puntaje actual es mejor que los puntajes almacenados.
         for (int i = 0; i < 3; i++)
         {
-            if (score < mejoresPuntajesR[i])
+            if (score > mejoresPuntajesR[i])
             {
                 float tempPuntaje = mejoresPuntajesR[i];
                 float tempTiempo = mejoresTiemposR[i];
@@ -108,8 +110,6 @@ public class CheckSpritesFinal : MonoBehaviour
 
                 score = (int)tempPuntaje; // Establece el puntaje actual al puntaje sobrescrito
                 elapsedTime = tempTiempo; // Establece el tiempo actual al tiempo sobrescrito
-
-                break; // No es necesario seguir verificando si ya se ha encontrado un mejor puntaje.
             }
         }
 
