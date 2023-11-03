@@ -12,8 +12,6 @@ public class CountdownTimer : MonoBehaviour
     public GameObject buttonToDeactivate;
     public GameObject buttonpauseToDeactivate;
 
-    public Image imageToActivate;
-
     public float countdownDuration = 300.0f; // Duración del temporizador en segundos (5 minutos por defecto)
     private float currentTime; // Tiempo actual del temporizador
     private bool isCountingDown; // Indica si el temporizador está en marcha
@@ -38,7 +36,7 @@ public class CountdownTimer : MonoBehaviour
             {
                 currentTime = 0;
                 isCountingDown = false;
-                StartCoroutine(ActivateImageAndEmptyCoroutine());
+                FinishCanvas();
             }
 
             UpdateTimerText();
@@ -76,21 +74,11 @@ public class CountdownTimer : MonoBehaviour
         UpdateTimerText();
     }
 
-    private IEnumerator ActivateImageAndEmptyCoroutine()
+    public void FinishCanvas()
     {
         elementToDeactivate.SetActive(false);
         buttonToDeactivate.gameObject.SetActive(false);
         buttonpauseToDeactivate.gameObject.SetActive(false);
-        // Activa la imagen
-        imageToActivate.gameObject.SetActive(true);
-
-        // Espera 0.25 segundos
-        yield return new WaitForSeconds(0.25f);
-
-        // Desactiva la imagen
-        imageToActivate.gameObject.SetActive(false);
-
-        // Activa el emptyObject
         elementToActivate.SetActive(true);
     }
 
