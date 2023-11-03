@@ -4,37 +4,30 @@ using TMPro;
 public class PuntajesSM : MonoBehaviour
 {
     [SerializeField]
-    private TextMeshProUGUI puntajesText;
+    private TextMeshProUGUI highScoreText;
 
     private void Start()
     {
-        string records = PlayerPrefs.GetString("BestRecordsSM", "");
-        string[] recordArray = records.Split(',');
+        DisplayHighScores();
+    }
 
-        if (recordArray.Length > 0)
+    void DisplayHighScores()
+    {
+        string highScoreTextContent = "";
+        for (int i = 0; i < 3; i++)
         {
-            System.Array.Sort(recordArray);
-
-            string top3RecordsText = "";
-
-            for (int i = 0; i < Mathf.Min(recordArray.Length, 3); i++)
+            string scoreAndTime = PlayerPrefs.GetString($"BestScoreSM{i}", "0pts - 00:00");
+            highScoreTextContent += scoreAndTime;
+            
+            if (i < 2)
             {
-                string[] recordParts = recordArray[i].Split('_');
-                int score = int.Parse(recordParts[0]);
-                float time = float.Parse(recordParts[1]);
-
-                int minutes = Mathf.FloorToInt(time / 60);
-                int seconds = Mathf.FloorToInt(time % 60);
-                string timeString = string.Format("{0:00}:{1:00}", minutes, seconds);
-
-                top3RecordsText += "Puntaje: " + score + " - Tiempo: " + timeString + "\n";
+                highScoreTextContent += "\n\n\n"; // Add two blank lines between records
             }
-
-            puntajesText.text = top3RecordsText;
         }
-        else
+
+        if (highScoreText != null)
         {
-            puntajesText.text = "No hay puntajes registrados.";
+            highScoreText.text = highScoreTextContent;
         }
     }
 }

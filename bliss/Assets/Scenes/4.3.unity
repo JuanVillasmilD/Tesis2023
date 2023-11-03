@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e6f1545cff6bf94999354f849b7db5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntajesTMP: {fileID: 885345114}
+  highScoreText: {fileID: 885345114}
 --- !u!4 &98703202
 Transform:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d8de3ac08e9ef478403b035bdeaa1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntajesText: {fileID: 572738884}
+  highScoreText: {fileID: 572738884}
 --- !u!4 &182536968
 Transform:
   m_ObjectHideFlags: 0

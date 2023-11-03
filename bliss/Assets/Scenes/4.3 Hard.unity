@@ -3755,8 +3755,9 @@ MonoBehaviour:
   - {fileID: 1379523703}
   - {fileID: 0}
   endPanel: {fileID: 239721229}
-  endPanelTimeText: {fileID: 0}
   moveCountText: {fileID: 696403842}
+  scoreText: {fileID: 1721111494}
+  endPanelTimeText: {fileID: 969500599}
 --- !u!114 &820874407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,7 +4356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24369cbdd2ad95a4699ce32b6ea547e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: 4
+  nombreEscena: 4.3
 --- !u!114 &974571895
 MonoBehaviour:
   m_ObjectHideFlags: 0

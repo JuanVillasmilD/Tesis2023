@@ -6,27 +6,32 @@ public class CheckSpritesFinal : MonoBehaviour
 {
     [SerializeField]
     private Transform[] pictures;
+
     [SerializeField]
     private GameObject nextLevel;
+
     [SerializeField]
     private GameObject currentLevel;
-    [SerializeField]
-    private TextMeshProUGUI timeText; // Agrega el objeto de texto TMP para el tiempo
-    [SerializeField]
-    private TextMeshProUGUI scoreText; // Agrega el objeto de texto TMP para el puntaje
 
-    private float startTime; // Almacena el tiempo de inicio
-    private float elapsedTime; // Almacena el tiempo transcurrido
-    private int score = 9000; // Puntaje inicial
+    [SerializeField]
+    private TextMeshProUGUI timeText;
 
-    // Define una tolerancia para la comparación
+    [SerializeField]
+    private TextMeshProUGUI scoreText;
+
+    private float startTime;
+    private float elapsedTime;
+    private int score = 9000;
     private float rotationTolerance = 0.01f;
-
-    private bool levelCompleted = false; // Variable para rastrear si el nivel se ha completado
+    private bool levelCompleted = false;
 
     void Start()
     {
-        startTime = Time.time; // Guarda el tiempo de inicio al inicio de la escena
+        startTime = Time.time;
+        // PlayerPrefs.DeleteKey("BestScore0");
+        // PlayerPrefs.DeleteKey("BestScore1");
+        // PlayerPrefs.DeleteKey("BestScore2");
+        // PlayerPrefs.Save(); // Guarda los cambios
     }
 
     void Update()
@@ -37,7 +42,6 @@ public class CheckSpritesFinal : MonoBehaviour
 
             foreach (Transform picture in pictures)
             {
-                // Compara si la rotación está dentro de la tolerancia
                 if (Mathf.Abs(picture.rotation.z) > rotationTolerance)
                 {
                     allPicturesCorrect = false;
@@ -68,58 +72,48 @@ public class CheckSpritesFinal : MonoBehaviour
         }
     }
 
-    // Calcula el puntaje y lo muestra en el objeto de texto TMP
     void CalculateScore()
     {
-        int timePenalty = Mathf.FloorToInt(elapsedTime * 20); // Calcula la penalización de tiempo
-        score -= timePenalty; // Resta la penalización al puntaje
+        int timePenalty = Mathf.FloorToInt(elapsedTime * 20);
+        score -= timePenalty;
         if (score < 0)
         {
-            score = 0; // Asegura que el puntaje no sea negativo
+            score = 0;
         }
 
         if (scoreText != null)
         {
-            scoreText.text = score.ToString() + "pts"; // Muestra el puntaje final
+            scoreText.text = score.ToString() + "pts";
         }
     }
 
-    // Función para guardar el puntaje y el tiempo transcurrido en PlayerPrefs y mantener solo los 3 mejores puntajes.
     void SaveData()
     {
-        // Obtener los 3 mejores puntajes y tiempos almacenados anteriormente.
-        float[] mejoresPuntajesR = new float[3];
-        float[] mejoresTiemposR = new float[3];
+        string scoreAndTime = $"{score}pts - {timeText.text}";
 
+        string[] bestScores = new string[3];
         for (int i = 0; i < 3; i++)
         {
-            mejoresPuntajesR[i] = PlayerPrefs.GetFloat($"MejorPuntajeR{i}", float.MinValue);
-            mejoresTiemposR[i] = PlayerPrefs.GetFloat($"MejorTiempoR{i}", float.MaxValue);
+            bestScores[i] = PlayerPrefs.GetString($"BestScore{i}", "0pts - 00:00");
         }
 
-        // Comprobar si el puntaje actual es mejor que los puntajes almacenados.
         for (int i = 0; i < 3; i++)
         {
-            if (score > mejoresPuntajesR[i])
+            string storedScoreAndTime = bestScores[i];
+            int storedScore = int.Parse(storedScoreAndTime.Split('p')[0]);
+            if (score > storedScore)
             {
-                float tempPuntaje = mejoresPuntajesR[i];
-                float tempTiempo = mejoresTiemposR[i];
-
-                mejoresPuntajesR[i] = score;
-                mejoresTiemposR[i] = elapsedTime;
-
-                score = (int)tempPuntaje; // Establece el puntaje actual al puntaje sobrescrito
-                elapsedTime = tempTiempo; // Establece el tiempo actual al tiempo sobrescrito
+                string temp = bestScores[i];
+                bestScores[i] = scoreAndTime;
+                scoreAndTime = temp;
             }
         }
 
-        // Almacenar los tres mejores puntajes y tiempos.
         for (int i = 0; i < 3; i++)
         {
-            PlayerPrefs.SetFloat($"MejorPuntajeR{i}", mejoresPuntajesR[i]);
-            PlayerPrefs.SetFloat($"MejorTiempoR{i}", mejoresTiemposR[i]);
+            PlayerPrefs.SetString($"BestScore{i}", bestScores[i]);
         }
 
-        PlayerPrefs.Save(); // Guarda los datos
+        PlayerPrefs.Save();
     }
 }

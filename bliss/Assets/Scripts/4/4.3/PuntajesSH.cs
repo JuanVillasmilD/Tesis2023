@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class PuntajesSE : MonoBehaviour
+public class PuntajesSH : MonoBehaviour
 {
     [SerializeField]
     private TextMeshProUGUI highScoreText;
@@ -16,7 +16,7 @@ public class PuntajesSE : MonoBehaviour
         string highScoreTextContent = "";
         for (int i = 0; i < 3; i++)
         {
-            string scoreAndTime = PlayerPrefs.GetString($"BestScoreSE{i}", "0pts - 00:00");
+            string scoreAndTime = PlayerPrefs.GetString($"BestScoreSH{i}", "0pts - 00:00");
             highScoreTextContent += scoreAndTime;
             
             if (i < 2)

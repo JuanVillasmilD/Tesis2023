@@ -33,6 +33,11 @@ public class SlidingScriptE : MonoBehaviour
     void Start()
     {
         _camera = Camera.main;
+        //Lo siguiente es para cuando quiera borrar los datos
+        // PlayerPrefs.DeleteKey("BestScoreSE0");
+        // PlayerPrefs.DeleteKey("BestScoreSE1");
+        // PlayerPrefs.DeleteKey("BestScoreSE2");
+        // PlayerPrefs.Save(); // Guarda los cambios
         Shuffle();
     }
 
@@ -43,7 +48,7 @@ public class SlidingScriptE : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
 
-        if (score > 0 && Input.GetMouseButtonDown(0))
+        if (score > 0 && Input.GetMouseButtonDown(0) && !_isFinished)
         {
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
@@ -122,7 +127,7 @@ public class SlidingScriptE : MonoBehaviour
             emptySpace.position = tileOn11LastPos;
             tiles[emptySpaceIndex] = tiles[8];
             tiles[8] = null;
-            emptySpaceIndex = 11;
+            emptySpaceIndex = 8;
         }
         int inversion;
         do
@@ -179,39 +184,31 @@ public class SlidingScriptE : MonoBehaviour
 
     void SaveData()
     {
-        // Obtener los 3 mejores puntajes y tiempos almacenados anteriormente.
-        float[] mejoresPuntajesSE = new float[3];
-        float[] mejoresTiemposSE = new float[3];
+        string scoreAndTime = $"{scoreText.text} - {endPanelTimeText.text}";
 
+        string[] bestScoreSEs = new string[3];
         for (int i = 0; i < 3; i++)
         {
-            mejoresPuntajesSE[i] = PlayerPrefs.GetFloat($"MejorPuntajeSE{i}", float.MinValue);
-            mejoresTiemposSE[i] = PlayerPrefs.GetFloat($"MejorTiempoSE{i}", float.MaxValue);
+            bestScoreSEs[i] = PlayerPrefs.GetString($"BestScoreSE{i}", "0pts - 00:00");
         }
 
-        // Comprobar si el puntaje actual es mejor que los puntajes almacenados.
         for (int i = 0; i < 3; i++)
         {
-            if (score > mejoresPuntajesSE[i])
+            string storedScoreAndTime = bestScoreSEs[i];
+            int storedScore = int.Parse(storedScoreAndTime.Split('p')[0]);
+            if (score > storedScore)
             {
-                float tempPuntaje = mejoresPuntajesSE[i];
-                float tempTiempo = mejoresTiemposSE[i];
-
-                mejoresPuntajesSE[i] = score;
-                mejoresTiemposSE[i] = elapsedTime;
-
-                score = (int)tempPuntaje; // Establece el puntaje actual al puntaje sobrescrito
-                elapsedTime = tempTiempo; // Establece el tiempo actual al tiempo sobrescrito
+                string temp = bestScoreSEs[i];
+                bestScoreSEs[i] = scoreAndTime;
+                scoreAndTime = temp;
             }
         }
 
-        // Almacenar los tres mejores puntajes y tiempos.
         for (int i = 0; i < 3; i++)
         {
-            PlayerPrefs.SetFloat($"MejorPuntajeSE{i}", mejoresPuntajesSE[i]);
-            PlayerPrefs.SetFloat($"MejorTiempoSE{i}", mejoresTiemposSE[i]);
+            PlayerPrefs.SetString($"BestScoreSE{i}", bestScoreSEs[i]);
         }
 
-        PlayerPrefs.Save(); // Guarda los datos
+        PlayerPrefs.Save();
     }
 }
