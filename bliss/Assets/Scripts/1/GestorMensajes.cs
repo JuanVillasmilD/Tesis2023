@@ -13,25 +13,42 @@ public class GestorMensajes : MonoBehaviour {
     public TextMeshProUGUI desarrolloText;
     public Mensaje[] mensajes;
 
-    private const string UltimoMensajeMostradoKey = "UltimoMensajeMostrado";
+    private const string UltimaFechaCambioKey = "UltimaFechaCambio";
+    private const string MensajeActualKey = "MensajeActual";
+    private DateTime ultimaFechaCambio;
     private int indiceMensajeActual = 0;
 
     private void Start() {
-        // Obtiene el día actual y el último mensaje mostrado
-        int diaActual = DateTime.Now.Day;
-        int ultimoMensajeMostrado = PlayerPrefs.GetInt(UltimoMensajeMostradoKey, -1);
+        // Obtiene la última fecha de cambio y la fecha actual
+        ultimaFechaCambio = DateTime.Parse(PlayerPrefs.GetString(UltimaFechaCambioKey, DateTime.MinValue.ToString()));
+        DateTime fechaActual = DateTime.Now;
 
-        // Calcula el índice del mensaje a mostrar
-        if (ultimoMensajeMostrado >= 0 && ultimoMensajeMostrado < mensajes.Length - 1) {
-            indiceMensajeActual = ultimoMensajeMostrado + 1;
+        // Comprueba si la fecha actual es posterior a la última fecha de cambio
+        if (fechaActual.Date > ultimaFechaCambio.Date) {
+            // Si la fecha actual es posterior, actualiza el mensaje
+            ActualizarMensaje(fechaActual);
+        } else {
+            // Si no, carga el mensaje actual
+            CargarMensajeActual();
         }
-
-        // Actualiza el último mensaje mostrado
-        PlayerPrefs.SetInt(UltimoMensajeMostradoKey, indiceMensajeActual);
-        PlayerPrefs.Save();
 
         // Muestra el mensaje actual
         tituloText.text = mensajes[indiceMensajeActual].titulo;
         desarrolloText.text = mensajes[indiceMensajeActual].desarrollo;
+    }
+
+    private void ActualizarMensaje(DateTime fechaActual) {
+        // Guarda la nueva fecha de cambio
+        PlayerPrefs.SetString(UltimaFechaCambioKey, fechaActual.ToString());
+        PlayerPrefs.Save();
+
+        // Actualiza el mensaje actual
+        indiceMensajeActual = (indiceMensajeActual + 1) % mensajes.Length;
+        PlayerPrefs.SetInt(MensajeActualKey, indiceMensajeActual);
+        PlayerPrefs.Save();
+    }
+
+    private void CargarMensajeActual() {
+        indiceMensajeActual = PlayerPrefs.GetInt(MensajeActualKey, 0);
     }
 }
