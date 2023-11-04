@@ -177,7 +177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &4338536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -266,7 +267,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -484,7 +485,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!82 &18821791
 AudioSource:
   m_ObjectHideFlags: 0
@@ -495,7 +497,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -678,7 +680,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &19575407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -767,7 +770,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1152,7 +1155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &176819163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1241,7 +1245,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1381,7 +1385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &306803965
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1470,7 +1475,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1941,7 +1946,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &415276384
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2030,7 +2036,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2211,7 +2217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &441608316
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2300,7 +2307,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2594,7 +2601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!82 &470570677
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2605,7 +2613,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2745,7 +2753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &472823939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2834,7 +2843,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2935,7 +2944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &473367847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3015,7 +3024,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &509303436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3104,7 +3114,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3244,7 +3254,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &529531454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3333,7 +3344,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3473,7 +3484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &545209766
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3562,7 +3574,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3702,7 +3714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &548275948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3791,7 +3804,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3931,7 +3944,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &559517853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4020,7 +4034,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4352,7 +4366,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &598221166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4441,7 +4456,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4581,7 +4596,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &601626833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4670,7 +4686,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4932,7 +4948,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &714936962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5021,7 +5038,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5182,7 +5199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!212 &743228618
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5245,7 +5263,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
@@ -5385,7 +5403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &775772200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5474,7 +5493,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5665,7 +5684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &809372189
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5754,7 +5774,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5894,7 +5914,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &826277578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5983,7 +6004,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6187,7 +6208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &878045981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6276,7 +6298,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6416,7 +6438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &908223713
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6505,7 +6528,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -6738,7 +6761,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &927880041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6775,7 +6799,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
@@ -7075,7 +7099,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &963710380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7164,7 +7189,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7570,7 +7595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1042138808
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7659,7 +7685,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7875,7 +7901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1061795943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7964,7 +7991,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8104,7 +8131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1071604323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8193,7 +8221,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8406,7 +8434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!82 &1095616285
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8417,7 +8446,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
@@ -8830,7 +8859,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1179490463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9250,7 +9279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1245063284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9339,7 +9369,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9823,7 +9853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1351356096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9912,7 +9943,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10052,7 +10083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1369702409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10141,7 +10173,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10281,7 +10313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1370494498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10370,7 +10403,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10844,7 +10877,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1452315995
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10933,7 +10967,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11073,7 +11107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1467191107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11162,7 +11197,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11302,7 +11337,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1480370907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11391,7 +11427,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11531,7 +11567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1505671377
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11620,7 +11657,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11881,7 +11918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1623605468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11970,7 +12008,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -12131,7 +12169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!212 &1633933484
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12194,7 +12233,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.8
   m_Pitch: 1
@@ -12334,7 +12373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1644226074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12423,7 +12463,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -12563,7 +12603,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1673550690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12652,7 +12693,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -12792,7 +12833,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1689917703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12881,7 +12923,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13097,7 +13139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1730116475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13186,7 +13229,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13326,7 +13369,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1740278520
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13415,7 +13459,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13555,7 +13599,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1742537007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13644,7 +13689,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13784,7 +13829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1755787348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13873,7 +13919,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14013,7 +14059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1758742579
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14102,7 +14149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14242,7 +14289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1773721404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14331,7 +14379,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14471,7 +14519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1773842663
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14560,7 +14609,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14835,7 +14884,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1779940526
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14924,7 +14974,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -15064,7 +15114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1794646161
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15153,7 +15204,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -15293,7 +15344,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1801560717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15382,7 +15434,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -15522,7 +15574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1822159748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15611,7 +15664,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -15827,7 +15880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1843069879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15916,7 +15970,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -16056,7 +16110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1848535934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16145,7 +16200,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -16420,7 +16475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1868498385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16509,7 +16565,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -16649,7 +16705,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1876911299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16738,7 +16795,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17013,7 +17070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1940986727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17102,7 +17160,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17242,7 +17300,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &1974223145
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17331,7 +17390,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17650,7 +17709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &2066299062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17739,7 +17799,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17879,7 +17939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 90
   rotationSpeed: 220
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &2068638176
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17968,7 +18029,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -18184,7 +18245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &2087859002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18273,7 +18335,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -18481,7 +18543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &2132289767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18570,7 +18633,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -18710,7 +18773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 45
   rotationSpeed: 170
-  rotationSound: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!61 &2134981381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18799,7 +18863,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -19017,7 +19081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationAngle: 60
   rotationSpeed: 200
-  rotationSound: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound1: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  rotationSound2: {fileID: 8300000, guid: eeacb3b4131dac34880711b232038884, type: 3}
 --- !u!82 &2135207506
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19028,7 +19093,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 52bacf60d31ec29438b90c8eea4423c9, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

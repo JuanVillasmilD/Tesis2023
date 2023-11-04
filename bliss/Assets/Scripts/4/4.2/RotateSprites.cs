@@ -8,7 +8,9 @@ public class RotateSprites : MonoBehaviour
     [SerializeField]
     private float rotationSpeed = 150f; // Velocidad de rotación
     [SerializeField]
-    private AudioClip rotationSound; // Sonido de rotación
+    private AudioClip rotationSound1; // Primer sonido de rotación
+    [SerializeField]
+    private AudioClip rotationSound2; // Segundo sonido de rotación
 
     private bool isRotating = false; // Variable para rastrear si la rotación está en curso
 
@@ -34,10 +36,13 @@ public class RotateSprites : MonoBehaviour
         float currentRotation = transform.eulerAngles.z;
         float targetRotation = currentRotation + rotationAngle;
 
-        // Reproduce el sonido de rotación
-        if (audioSource != null && rotationSound != null)
+        // Selecciona aleatoriamente entre los dos sonidos
+        AudioClip selectedSound = Random.Range(0, 2) == 0 ? rotationSound1 : rotationSound2;
+
+        // Reproduce el sonido de rotación seleccionado
+        if (audioSource != null && selectedSound != null)
         {
-            audioSource.PlayOneShot(rotationSound);
+            audioSource.PlayOneShot(selectedSound);
         }
 
         while (Mathf.Abs(currentRotation - targetRotation) > 0.1f)

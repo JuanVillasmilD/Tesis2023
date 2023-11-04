@@ -30,6 +30,10 @@ public class SlidingScriptM : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI endPanelTimeText;
 
+    [SerializeField]
+    private AudioClip tileMoveSound; // Agrega el audio para el sonido de movimiento
+    private AudioSource audioSource; // Componente para reproducir sonidos
+
     void Start()
     {
         _camera = Camera.main;
@@ -39,6 +43,9 @@ public class SlidingScriptM : MonoBehaviour
         // PlayerPrefs.DeleteKey("BestScoreSM2");
         // PlayerPrefs.Save(); // Guarda los cambios
         Shuffle();
+
+        // Obtiene el componente AudioSource
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -76,6 +83,9 @@ public class SlidingScriptM : MonoBehaviour
 
                     // Actualiza el texto del puntaje en el componente TMP
                     scoreText.text = score.ToString() + "pts";
+
+                    // Reproduce el sonido de movimiento
+                    PlayTileMoveSound();
                 }
             }
         }
@@ -210,5 +220,11 @@ public class SlidingScriptM : MonoBehaviour
         }
 
         PlayerPrefs.Save();
+    }
+
+    void PlayTileMoveSound()
+    {
+        // Reproduce el sonido de movimiento
+        audioSource.PlayOneShot(tileMoveSound);
     }
 }
