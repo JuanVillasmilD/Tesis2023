@@ -873,7 +873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7577931}
   m_AnchorMax: {x: 0, y: 0.7577931}
-  m_AnchoredPosition: {x: 554, y: -99}
+  m_AnchoredPosition: {x: 554, y: -113}
   m_SizeDelta: {x: 371.8926, y: 95.1151}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &299071458
@@ -2383,7 +2383,7 @@ MonoBehaviour:
   tituloText: {fileID: 299071458}
   desarrolloText: {fileID: 1504494612}
   mensajes:
-  - titulo: Encuentra la paz interior
+  - titulo: "Lib\xE9rate del estr\xE9s, abraza la armon\xEDa"
     desarrollo: "Lib\xE9rate de las tensiones y permite que la armon\xEDa y la serenidad
       te envuelvan."
   - titulo: "Rel\xE1jate y siente la tranquilidad"
@@ -2398,6 +2398,24 @@ MonoBehaviour:
   - titulo: "En el coraz\xF3n de la tranquilidad"
     desarrollo: "Deja que la serenidad sea tu refugio en medio del ajetreo y el estr\xE9s
       cotidiano."
+  - titulo: Puedes mas de lo que imaginas
+    desarrollo: "Desbloquea tu potencial interno y lib\xE9rate del peso del estr\xE9s
+      para sumergirte en la serena armon\xEDa."
+  - titulo: Todo lo que pasa es parte del proceso
+    desarrollo: "Cada situaci\xF3n es necesaria, acepta que todo forma parte de un
+      proceso que te lleva hac\xEDa la serenidad."
+  - titulo: "Peque\xF1as cosas hacen grandes cosas."
+    desarrollo: "Deja que las peque\xF1as cosas te gu\xEDen hacia un gran alivio.
+      Respira, rel\xE1jate y observa c\xF3mo las tensiones se disuelven."
+  - titulo: "Recuerda: vive un d\xEDa a la vez"
+    desarrollo: "Avanza gradualmente, d\xEDa a d\xEDa, acerc\xE1ndote al bienestar
+      interior. Cada d\xEDa es una oportunidad para encontrar calma y equilibrio."
+  - titulo: "Tu progreso no necesita ser visto para ser v\xE1lido"
+    desarrollo: "Cada parte del progreso es genuino, incluso si no es evidente para
+      los dem\xE1s."
+  - titulo: Regalate instantes de calma, lo mereces
+    desarrollo: "Es un regalo merecido que restaura tu serenidad emocional. Concede
+      una pausa y perm\xEDtete reconectar contigo mismo."
 --- !u!4 &862310113
 Transform:
   m_ObjectHideFlags: 0
@@ -3821,7 +3839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5606897}
   m_AnchorMax: {x: 0, y: 0.5606897}
-  m_AnchoredPosition: {x: 456, y: -197.4943}
+  m_AnchoredPosition: {x: 456, y: -212}
   m_SizeDelta: {x: 530.69, y: 126.1913}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504494612
