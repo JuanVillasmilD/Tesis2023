@@ -18,6 +18,9 @@ public class AuthUIManager : MonoBehaviour
     [SerializeField]
     private GameObject forgotUI;
 
+    [SerializeField]
+    private GameObject emailUI;
+
     private void Awake()
     {
         mainUI.SetActive(true);
@@ -37,6 +40,7 @@ public class AuthUIManager : MonoBehaviour
         loginUI.SetActive(false);
         registerUI.SetActive(false);
         forgotUI.SetActive(false);
+        emailUI.SetActive(false);
         FireBaseManager.instance.ClearOutputs();
     }
 
@@ -62,5 +66,11 @@ public class AuthUIManager : MonoBehaviour
     {
         ClearUI();
         mainUI.SetActive(true);
+    }
+
+    public void EmailScreen()
+    {
+        ClearUI();
+        emailUI.SetActive(true);
     }
 }

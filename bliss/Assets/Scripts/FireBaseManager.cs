@@ -8,7 +8,6 @@ using Firebase.Extensions;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-
 public class FireBaseManager : MonoBehaviour
 {
     public static FireBaseManager instance;
@@ -110,7 +109,14 @@ public class FireBaseManager : MonoBehaviour
 
             yield return new WaitUntil(predicate: () => reloadUserTask.IsCompleted);
 
-            AutoLogin();
+            if (user.IsEmailVerified)
+            {
+                AutoLogin();
+            }
+            else
+            {
+                loginOutputText.text = "Por favor, verifica tu correo electrónico.";
+            }
         }
         else
         {
@@ -220,7 +226,7 @@ public class FireBaseManager : MonoBehaviour
             }
             else
             {
-                GameManager.instance.ChangeScene(1);
+                loginOutputText.text = "Por favor, verifica tu correo electrónico.";
             }
         }
     }
@@ -313,7 +319,19 @@ public class FireBaseManager : MonoBehaviour
                     UnityEngine.Debug.Log(
                         $"Firebase User Created Succesfully: {user.DisplayName} ({user.UserId})"
                     );
-                    AuthUIManager.instance.LoginScreen();
+
+                    // Envía el correo de verificación
+                    var emailTask = user.SendEmailVerificationAsync();
+                    yield return new WaitUntil(predicate: () => emailTask.IsCompleted);
+
+                    if (emailTask.Exception != null)
+                    {
+                        // Maneja los errores
+                    }
+                    else
+                    {
+                        AuthUIManager.instance.EmailScreen(); // Dirige al usuario a la pantalla de verificación
+                    }
                 }
             }
         }
