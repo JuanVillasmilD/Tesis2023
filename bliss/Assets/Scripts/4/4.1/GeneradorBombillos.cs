@@ -12,7 +12,9 @@ public class GeneradorBombillos : MonoBehaviour
     private BubblesManager deteccionSonido;
 
     private SpriteRenderer spriteRenderer;
+
     private bool seleccionado = false;
+    public GameObject objetoDeControl; // Asigna el GameObject desde el Inspector.
 
     private void Start()
     {
@@ -23,13 +25,14 @@ public class GeneradorBombillos : MonoBehaviour
 
     void ActualizarSpriteInicial()
     {
-        Sprite spriteInicial = Random.Range(0f, 1f) < 0.5f ? spriteBombilloGris : spriteBombilloBlanco;
+        Sprite spriteInicial =
+            Random.Range(0f, 1f) < 0.5f ? spriteBombilloGris : spriteBombilloBlanco;
         spriteRenderer.sprite = spriteInicial;
     }
 
     private void OnMouseDown()
     {
-        if (!seleccionado)
+        if (!seleccionado && !objetoDeControl.activeSelf)
         {
             CambiarColorYSonido();
         }

@@ -252,6 +252,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &20908361
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +382,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &27467655
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +512,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &137092402
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +642,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &147979806
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +772,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &157831135
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +902,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &159935578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1032,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &161702227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1297,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &174547797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1427,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &210585140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,6 +1690,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &229291569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2005,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &373930985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2135,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &397554409
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +2265,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &439518715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2395,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &483382291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,6 +2525,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &507154582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2640,6 +2655,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &509611954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,7 +2756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &513712475
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3134,6 +3150,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &634903465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,6 +3280,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &639560976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,6 +3648,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &660806830
 GameObject:
   m_ObjectHideFlags: 0
@@ -3759,6 +3778,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &677064677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +3908,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &703616021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,6 +4038,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &703617252
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +4168,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &750054444
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,6 +4374,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &788034985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,6 +4504,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &796700527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,6 +4634,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &808859002
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,6 +4764,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &814490870
 GameObject:
   m_ObjectHideFlags: 0
@@ -4867,6 +4894,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &825766682
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,6 +5024,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &842103157
 GameObject:
   m_ObjectHideFlags: 0
@@ -5125,6 +5154,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &887371088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5254,6 +5284,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &924901967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5502,6 +5533,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &992104189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5766,6 +5798,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1029043900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5895,6 +5928,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1032668828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5985,6 +6019,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6157,6 +6203,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1147092446
 GameObject:
   m_ObjectHideFlags: 0
@@ -6286,6 +6333,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1148385852
 GameObject:
   m_ObjectHideFlags: 0
@@ -6415,6 +6463,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1192883575
 GameObject:
   m_ObjectHideFlags: 0
@@ -7069,6 +7118,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1284618431
 GameObject:
   m_ObjectHideFlags: 0
@@ -7084,7 +7134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1284618432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7507,6 +7557,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1353564051
 GameObject:
   m_ObjectHideFlags: 0
@@ -7636,6 +7687,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1376854371
 GameObject:
   m_ObjectHideFlags: 0
@@ -7765,6 +7817,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1380950088
 GameObject:
   m_ObjectHideFlags: 0
@@ -7894,6 +7947,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1394205990
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,6 +8145,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1568150347
 GameObject:
   m_ObjectHideFlags: 0
@@ -8296,6 +8351,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1589602463
 GameObject:
   m_ObjectHideFlags: 0
@@ -8425,6 +8481,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1687608570
 GameObject:
   m_ObjectHideFlags: 0
@@ -8554,6 +8611,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1730151659
 GameObject:
   m_ObjectHideFlags: 0
@@ -8683,6 +8741,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1754704925
 GameObject:
   m_ObjectHideFlags: 0
@@ -8888,6 +8947,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1768969985
 GameObject:
   m_ObjectHideFlags: 0
@@ -9017,6 +9077,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1817452378
 GameObject:
   m_ObjectHideFlags: 0
@@ -9146,6 +9207,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1835526230
 GameObject:
   m_ObjectHideFlags: 0
@@ -9485,6 +9547,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1878246870
 GameObject:
   m_ObjectHideFlags: 0
@@ -9614,6 +9677,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1879280285
 GameObject:
   m_ObjectHideFlags: 0
@@ -10104,6 +10168,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &1999264037
 GameObject:
   m_ObjectHideFlags: 0
@@ -10309,6 +10374,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2026090317
 GameObject:
   m_ObjectHideFlags: 0
@@ -10438,6 +10504,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2032042923
 GameObject:
   m_ObjectHideFlags: 0
@@ -10567,6 +10634,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2077328271
 GameObject:
   m_ObjectHideFlags: 0
@@ -10696,6 +10764,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2082801606
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,6 +11164,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2103434546
 GameObject:
   m_ObjectHideFlags: 0
@@ -11224,6 +11294,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2107640460
 GameObject:
   m_ObjectHideFlags: 0
@@ -11429,6 +11500,7 @@ MonoBehaviour:
   spriteBombilloAzul: {fileID: 21300000, guid: 4c4f7a87dfdb05745ae3fac00e7a46b2, type: 3}
   spriteBombilloAmarillo: {fileID: 21300000, guid: e059ddef4f9716942991b79d12564d46, type: 3}
   sonidoBombillo: {fileID: 8300000, guid: bd893459bc16c3141b338f55701f96c9, type: 3}
+  objetoDeControl: {fileID: 513712474}
 --- !u!1 &2123581858
 GameObject:
   m_ObjectHideFlags: 0

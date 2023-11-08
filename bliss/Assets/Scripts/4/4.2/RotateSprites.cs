@@ -16,6 +16,9 @@ public class RotateSprites : MonoBehaviour
 
     private AudioSource audioSource;
 
+    public GameObject objetoDeControl; // Asigna el GameObject desde el Inspector.
+
+
     private void Start()
     {
         // Obtén el componente AudioSource
@@ -24,7 +27,7 @@ public class RotateSprites : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!isRotating)
+        if (!isRotating && !objetoDeControl.activeSelf)
         {
             StartCoroutine(RotateSmoothly());
         }
