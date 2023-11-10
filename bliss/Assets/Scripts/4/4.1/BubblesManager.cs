@@ -13,6 +13,14 @@ public class BubblesManager : MonoBehaviour
 
     public Temporizador temporizador;
 
+    private void Start()
+    {
+        // PlayerPrefs.DeleteKey("MejorPuntaje0");
+        // PlayerPrefs.DeleteKey("MejorPuntaje1");
+        // PlayerPrefs.DeleteKey("MejorPuntaje2");
+        // PlayerPrefs.Save(); // Guarda los cambios
+    }
+
     private void Update()
     {
         if (bombillosEncendidos < totalBombillos)
