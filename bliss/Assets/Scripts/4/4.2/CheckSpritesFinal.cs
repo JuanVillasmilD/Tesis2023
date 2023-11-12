@@ -17,6 +17,9 @@ public class CheckSpritesFinal : MonoBehaviour
     private TextMeshProUGUI timeText;
 
     [SerializeField]
+    private TextMeshProUGUI realTimeText; // Nuevo campo para mostrar el temporizador en tiempo real
+
+    [SerializeField]
     private TextMeshProUGUI scoreText;
 
     private float startTime;
@@ -59,6 +62,11 @@ public class CheckSpritesFinal : MonoBehaviour
                 CalculateScore();
                 SaveData(); // Llama a la función para guardar los datos
             }
+            else
+            {
+                // Si el juego aún no ha terminado, actualiza el temporizador en tiempo real.
+                UpdateRealTime();
+            }
         }
     }
 
@@ -69,6 +77,17 @@ public class CheckSpritesFinal : MonoBehaviour
         {
             TimeSpan timeSpan = TimeSpan.FromSeconds(elapsedTime);
             timeText.text = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
+        }
+    }
+
+    // Muestra el temporizador en tiempo real mientras se juega
+    void UpdateRealTime()
+    {
+        if (realTimeText != null)
+        {
+            float currentRealTime = Time.time - startTime;
+            TimeSpan realTimeSpan = TimeSpan.FromSeconds(currentRealTime);
+            realTimeText.text = $"{realTimeSpan.Minutes:D2}:{realTimeSpan.Seconds:D2}";
         }
     }
 
