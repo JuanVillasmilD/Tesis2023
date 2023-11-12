@@ -4062,7 +4062,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NIVEL: DIFICIL'
+  m_text: "NIVEL: DIF\xCDCIL"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e918521d1a3247d4b9c8119df5ad21dd, type: 2}
   m_sharedMaterial: {fileID: 5808874669864290098, guid: e918521d1a3247d4b9c8119df5ad21dd, type: 2}
